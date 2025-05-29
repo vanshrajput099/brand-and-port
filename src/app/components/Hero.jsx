@@ -18,7 +18,14 @@ const Hero = () => {
                     <button className="orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl">Schedule A Call </button>
                 </div>
             </div>
-            <img src={Rectangle.src} className='h-[200px] sm:h-[400px] xl:h-[600px] xl:w-[55%] object-cover mt-10 rounded-xl' alt="" />
+            <video
+                src="/assets/mainVideo.mp4"
+                className="w-full sm:w-[80%] xl:w-[55%] mt-5"
+                controls
+                autoPlay
+                muted
+                playsInline
+            ></video>
         </div>
     )
 }
