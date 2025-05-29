@@ -7,8 +7,8 @@ import { TARGET_AUDIENCE } from '@/data'
 const page = () => {
     return (
         <>
-            <div className='w-[98%] px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
-                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between lg:w-[80%] mx-auto mt-20'>
+            <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>About</h1>
                     <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>We build brands that travel well across borders and browsers.
                         From sourcing the perfect product to shaping the perfect story.
@@ -26,26 +26,25 @@ const page = () => {
                         Our roots are here, our ambition is worldwide. We guide brands across borders, steering them toward opportunity and impact. Because for us, success isn’t just about reaching the destination it’s about creating an unforgettable journey.</p>
                 </div>
             </div>
-            <div className='w-[98%] px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-40 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+            <div className='w-full px-2 mx-auto bg-black flex flex-col items-center py-40 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
                 <div className='text-center space-y-10'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Our Global Footprint</h1>
                     <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%] mx-auto'>From Asia to North America, our footprint is ever growing.
                         We connect people, products, and possibilities across the globe.
                     </p>
-                    <img src={world.src} className='lg:w-[80%] mx-auto mt-10' alt="" />
+                    <img src={world.src} className='w-[90%] md:w-[70%] lg:w-[50%] mx-auto mt-10' alt="" />
                 </div>
             </div>
             <div className='w-[90%] lg:w-[60%] mx-auto py-10 body-text space-y-5'>
                 <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Target Audience</h1>
                 <p className='body-text secondary-text-color text-base md:text-xl'>Canadian businesses across industries looking to strengthen their brand, expand their market reach, and source quality products globally.</p>
-
                 <div>
                     <h1 className='body-text text-base md:text-xl'>Ideal For:</h1>
-                    <div className='grid grid-cols-2 lg:grid-cols-3 gap-y-5 mt-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 gap-x-2 mt-5'>
                         {
-                            TARGET_AUDIENCE.map((ele, key) => {
-                                return <div>
-                                    <h1>
+                            TARGET_AUDIENCE.map((ele, idx) => {
+                                return <div key={idx} className=''>
+                                    <h1 className='text-sm lg:text-base'>
                                         <span className='orange-text'>{ele.span} </span>
                                         {ele.text}
                                     </h1>

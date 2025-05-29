@@ -1,6 +1,7 @@
 import React from 'react'
 import brand from "@/assets/brand.png"
 import AboutUsBox from './AboutUsBox'
+import { FEATURES_DATA } from '@/data'
 
 const WhyChooseUs = () => {
     return (
@@ -14,7 +15,7 @@ const WhyChooseUs = () => {
             <div className='flex justify-center'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-y-5 gap-x-24 lg:gap-x-50 xl:gap-x-0 xl:mt-20'>
                     {
-                        [1, 2, 3, 4, 5, 6].map((ele, idx) => <AboutUsBox key={idx} />)
+                        FEATURES_DATA.map((ele, idx) => <AboutUsBox data={ele} key={idx} />)
                     }
                 </div>
             </div>

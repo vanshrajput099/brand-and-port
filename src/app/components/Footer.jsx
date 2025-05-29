@@ -1,6 +1,7 @@
 import React from 'react'
 import footerLogo from "@/assets/footerLogo.png"
 import Image from 'next/image'
+import { FOOTER_OPTIONS } from '@/data'
 
 const Footer = () => {
     return (
@@ -25,11 +26,11 @@ const Footer = () => {
                         <h1 className='text-xl'>What do you want our help with? *</h1>
                         <div className='space-y-5 mt-5'>
                             {
-                                [1, 2, 3, 4, 5].map((ele, idx) => {
+                                FOOTER_OPTIONS.map((ele, idx) => {
                                     return (
-                                        <div className='flex items-center gap-2'>
+                                        <div key={idx} className='flex items-center gap-2'>
                                             <input type="checkbox" placeholder='Name*' className='border-b-2 w-6 h-6 placeholder:text-xl' />
-                                            <label className='' htmlFor="">{ele === 5 ? "Other" : "Brand Identity Design."}</label>
+                                            <label className='' htmlFor="">{ele}</label>
                                         </div>
                                     )
                                 })

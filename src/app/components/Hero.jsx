@@ -4,7 +4,7 @@ import Rectangle from "@/assets/Rectangle.png"
 
 const Hero = () => {
     return (
-        <div className='w-[98%] px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-40 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+        <div className='px-2 xl:px-0 w-full mx-auto bg-black flex flex-col items-center py-40 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
             <div className='bg-[#272423] px-3 py-1 body-text text-sm rounded-xl w-fit'>
                 <h1>Introducing Brand & Port</h1>
             </div>
@@ -18,7 +18,7 @@ const Hero = () => {
                     <button className="orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl">Schedule A Call </button>
                 </div>
             </div>
-            <img src={Rectangle.src} className='h-[200px] sm:h-[400px] xl:h-[600px] w-[85%] object-cover mt-10 rounded-xl' alt="" />
+            <img src={Rectangle.src} className='h-[200px] sm:h-[400px] xl:h-[600px] xl:w-[55%] object-cover mt-10 rounded-xl' alt="" />
         </div>
     )
 }
