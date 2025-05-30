@@ -1,19 +1,20 @@
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
-import { OUR_WORKS_DATA2, OUR_WORKS_PAGE_DATA2 } from '@/data'
+import { OUR_WORKS_PAGE_DATA2 } from '@/data'
+import stats from "@/assets/stats.png"
 
 const page = () => {
     return (
         <>
-            <div className='w-full px-2 mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+            <div className='relative w-full px-2 mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
                 <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Our Work</h1>
                     <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.
                     </p>
                 </div>
+                <img className='absolute top-[70%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" />
             </div>
-
-            <div className="w-[90%] xl:w-[60%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
+            <div className="w-[90%] lg:w-[70%] xl:w-[60%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
                 {
                     OUR_WORKS_PAGE_DATA2.map((ele, idx) => (
                         <div
@@ -21,7 +22,7 @@ const page = () => {
                             className="mb-16 break-inside-avoid overflow-hidden rounded-xl bg-[#121212] shadow-md hover:shadow-lg transition-all duration-300"
                         >
                             <img
-                                className="w-full object-cover object-center rounded-t-xl"
+                                className="w-full max-sm:max-h-[150px] object-cover rounded-t-xl"
                                 src={ele.img.src}
                                 alt={ele.name}
                             />
@@ -37,12 +38,10 @@ const page = () => {
                     ))
                 }
             </div>
-
-
-            <div className='w-full md:w-[90%] xl:w-[65%] mx-auto flex justify-end xl:mt-10 py-10 xl:py-20'>
+            <div className='relative w-full md:w-[90%] xl:w-[65%] mx-auto flex justify-end xl:mt-10 py-10 xl:py-20'>
                 <h1 className='text-right px-5 sm:text-right xl:w-[80%] heading-text text-3xl sm:text-5xl xl:text-7xl'>Let’s Make You the <br /> Next Highlight.</h1>
+                <img className='absolute w-full -top-[20%] right-0 sm:-top-[80%] md:-right-[0%] md:w-[70%] xl:-top-[25%] xl:-right-[20%] xl:w-[60%] -z-10' src={stats.src} alt="" />
             </div>
-
         </>
     )
 }

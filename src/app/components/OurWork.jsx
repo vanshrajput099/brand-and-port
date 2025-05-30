@@ -14,7 +14,7 @@ const OurWork = () => {
                             className="mb-16 break-inside-avoid overflow-hidden rounded-xl bg-[#121212] shadow-md hover:shadow-lg transition-all duration-300"
                         >
                             <img
-                                className="w-full object-cover object-center rounded-t-xl"
+                                className="w-full max-sm:max-h-[150px] object-cover object-center rounded-t-xl"
                                 src={ele.img.src}
                                 alt={ele.name}
                             />

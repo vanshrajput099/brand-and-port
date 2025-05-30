@@ -1,12 +1,18 @@
+"use client";
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import brandLogo from "@/assets/brandLogo.png"
 import Link from 'next/link'
 import { HEADER_NAVS } from '@/data'
 import { Menu } from 'lucide-react';
 import NavSheet from './NavSheet'
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+
+    const pathname = usePathname();
+    console.log(pathname, `${HEADER_NAVS[0].href}`)
+
     return (
         <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[80%] mx-auto py-10 border-b-2 border-b-gray-700'>
             <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[180px] h-[30px] hidden xl:block' />
@@ -19,7 +25,11 @@ const Header = () => {
             <div className='gap-7 hidden xl:flex'>
                 {
                     HEADER_NAVS.map((ele, idx) => {
-                        return <Link className='body-text text-sm' key={idx} href={ele.href}>{ele.name}</Link>
+                        return <button key={idx} className={`hover:cursor-pointer ${pathname === `${ele.href}` && "orange-text"}`}>
+                            <Link className={`body-text text-sm hover:cursor-pointer`} href={ele.href}>
+                                {ele.name}
+                            </Link>
+                        </button>
                     })
                 }
             </div>

@@ -4,7 +4,7 @@ import { TESTIMONIALS_DATA } from "@/data";
 import quote from "@/assets/quote.png";
 
 export default function TestimonialCarousel() {
-    
+
     const [activeIndex, setActiveIndex] = useState(0);
     const containerRef = useRef(null);
     const cardRef = useRef(null);
@@ -38,7 +38,7 @@ export default function TestimonialCarousel() {
                                     <div
                                         key={index}
                                         ref={index === 0 ? cardRef : null}
-                                        className={`w-[300px] md:w-[400px] xl:w-[550px] transition-all duration-500 ease-in-out ${isActive ? "scale-100" : "scale-90"} px-6 py-10 bg-[#1a1a1a] text-white rounded-3xl space-y-6 flex-shrink-0`}
+                                        className={`w-[300px] md:w-[400px] xl:w-[550px] transition-all duration-500 ease-in-out ${isActive ? "scale-100" : "scale-90"} px-6 py-10 bg-[#1a1a1a]/40 border border-white/10 text-white rounded-3xl space-y-6 flex-shrink-0`}
                                     >
                                         <img
                                             className="h-[20px] w-[30px] xl:h-[60px] xl:w-[80px]"

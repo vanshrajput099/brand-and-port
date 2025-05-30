@@ -8,6 +8,7 @@ import ourWork7 from "@/assets/ourWork7.png"
 import ourWork8 from "@/assets/ourWork8.png"
 import ourWork9 from "@/assets/ourWork9.png"
 import ourWork10 from "@/assets/ourWork10.png"
+import ourWork11 from "@/assets/ourWork11.png"
 import choose1 from "@/assets/choose1.png"
 import choose2 from "@/assets/choose2.png"
 import choose3 from "@/assets/choose3.png"
@@ -48,7 +49,7 @@ export const HEADER_NAVS = [
     { name: "Services", href: "/services" },
     { name: "Our Work", href: "/our-work" },
     { name: "Private Label", href: "/private-label" },
-    { name: "Blogs", href: "/" },
+    { name: "Blogs", href: "/blogs" },
     { name: "Contact Us", href: "/contact-us" },
 ]
 
@@ -58,20 +59,21 @@ export const OUR_WORKS_DATA2 = [
     { name: "SOCIAL MEDIA", title: "Branded", location: "Miami, Florida", img: ourWork3 },
     { name: "SOCIAL MEDIA", title: "Rivado", location: "Calgary, Canada", img: ourWork4 },
     { name: "SHOOT", title: "Decoy Galleries", location: "San Francisco, California", img: ourWork7 },
-    { name: "Logo & Branding", title: "Thrivesys", location: "Minnesota, USA", img: ourWork9 },
+    { name: "LOGO & BRANDING", title: "Thrivesys", location: "Minnesota, USA", img: ourWork9 },
 ]
 
 export const OUR_WORKS_PAGE_DATA2 = [
     { name: "WEBSITE", title: "Redcruit", location: "Mineeapolis, USA", img: ourWork1 },
-    { name: "LOGO & BRANDING", title: "Sixth Sense", location: "Delhi, India", img: ourWork2 },
+    { name: "LOGO & BRANDING", title: "Thrivesys", location: "Minnesota, USA", img: ourWork9 },
+    { name: "WEBSITE", title: "ASG", location: "Minneapolis, USA", img: ourWork11 },
+    { name: "BRANDING", title: "Emori", location: "Delhi, India", img: ourWork6 },
     { name: "SOCIAL MEDIA", title: "Branded", location: "Miami, Florida", img: ourWork3 },
+    { name: "BRANDING", title: "IKKA", location: "UAE", img: ourWork5 },
     { name: "SOCIAL MEDIA", title: "Rivado", location: "Calgary, Canada", img: ourWork4 },
-    { name: "BRANDING", title: "Ikka", location: "UAE", img: ourWork5 },
-    { name: "INVITATIONS", title: "Emori", location: "Delhi, India", img: ourWork6 },
+    { name: "LOGO & BRANDING", title: "Sixth Sense", location: "Delhi, India", img: ourWork2 },
     { name: "SHOOT", title: "Decoy Galleries", location: "San Francisco, California", img: ourWork7 },
+    { name: "BRANDING", title: "HUPL", location: "Kolkata, India", img: ourWork10 },
     { name: "SHOOT", title: "Moena", location: "Banglore, India", img: ourWork8 },
-    { name: "Logo & Branding", title: "Thrivesys", location: "Minnesota, USA", img: ourWork9 },
-    { name: "Branding", title: "HUPL", location: "Banglore, India", img: ourWork10 },
 ]
 
 export const TARGET_AUDIENCE = [
@@ -363,6 +365,38 @@ export const HOW_WE_WORK_DATA = [
     { title: "Discovery", image: how1, description: "We begin with deep-dive discovery, understanding your brand vision, product needs and target markets.", deliverables: "Strategy call, Brand/Product brief, Market research" },
     { title: "Development", image: how2, description: "Our creative and sourcing teams work in parallel developing your brand identity and sourcing product solutions globally.", deliverables: "Brand concepts, Product samples, Prototypes" },
     { title: "Refinement", image: how3, description: "We fine tune based on your feedback, ensure quality checks and finalize assets or supplier terms.", deliverables: "Final brand kit, QC reports, PO confirmations, Packaging deadlines" },
+]
+
+import ourBlogs1 from "@/assets/ourBlogs1.png"
+import ourBlogs2 from "@/assets/ourBlogs2.png"
+import ourBlogs3 from "@/assets/ourBlogs3.png"
+import ourBlogs4 from "@/assets/ourBlogs4.png"
+
+export const OUR_BLOGS = [
+    {
+        name: "The Complete Guide to Branding in 2025: What Is It & Why Is It Important?",
+        text: "A comprehensive guide detailing essential tools and techniques for building a strong brand, emphasizing the importance of understanding branding to elevate business success.",
+        time: "Orana Velarde, May 07, 2024",
+        image: ourBlogs1
+    },
+    {
+        name: "A Simple Logo Is The Best Option For Your Brand",
+        text: "Explores the advantages of simple logos, including memorability, versatility, and effective communication, making them ideal for establishing a strong brand identity.",
+        time: " BusinessBlogs , August 10, 2023",
+        image: ourBlogs3
+    },
+    {
+        name: "The Amazing Eco-Friendly Gadgets You Need to Try Today",
+        text: "Highlights the environmental and health benefits of green products, advocating for sustainable living through reduced carbon footprints and the use of eco-friendly materials.",
+        time: "SRC",
+        image: ourBlogs2
+    },
+    {
+        name: "A Useful Experience: Why Usability Is Essential To UX Design",
+        text: "Emphasizes the critical role of usability in UX design, asserting that user-friendly interfaces build trust and enhance relationships with customers and stakeholders.",
+        time: "Goran paun, 28 Feb 2019",
+        image: ourBlogs4
+    },
 ]
 
 

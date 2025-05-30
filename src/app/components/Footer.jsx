@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='text-center py-2'>
+            <div className='text-center py-2 md:pb-10'>
                 <p className='text-sm xl:text-xl'>© 2025 The Brand & Port. All rights reserved.</p>
             </div>
         </>
