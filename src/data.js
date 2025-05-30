@@ -49,7 +49,7 @@ export const HEADER_NAVS = [
     { name: "Our Work", href: "/our-work" },
     { name: "Private Label", href: "/private-label" },
     { name: "Blogs", href: "/" },
-    { name: "Contact Us", href: "/" },
+    { name: "Contact Us", href: "/contact-us" },
 ]
 
 export const OUR_WORKS_DATA2 = [
