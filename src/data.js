@@ -34,13 +34,20 @@ import servicesPage5 from "@/assets/servicesPage5.png"
 import servicesPage6 from "@/assets/servicesPage6.png"
 import servicesPage7 from "@/assets/servicesPage7.png"
 import servicesPage8 from "@/assets/servicesPage8.png"
+import privateLabel1 from "@/assets/privateLabel1.png"
+import privateLabel2 from "@/assets/privateLabel2.png"
+import privateLabel3 from "@/assets/privateLabel3.png"
+import privateLabel4 from "@/assets/privateLabel4.png"
+import how1 from "@/assets/how1.png";
+import how2 from "@/assets/how2.png";
+import how3 from "@/assets/how3.png";
 
 export const HEADER_NAVS = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
     { name: "Services", href: "/services" },
     { name: "Our Work", href: "/our-work" },
-    { name: "Private Label", href: "/" },
+    { name: "Private Label", href: "/private-label" },
     { name: "Blogs", href: "/" },
     { name: "Contact Us", href: "/" },
 ]
@@ -50,8 +57,8 @@ export const OUR_WORKS_DATA2 = [
     { name: "LOGO & BRANDING", title: "Sixth Sense", location: "Delhi, India", img: ourWork2 },
     { name: "SOCIAL MEDIA", title: "Branded", location: "Miami, Florida", img: ourWork3 },
     { name: "SOCIAL MEDIA", title: "Rivado", location: "Calgary, Canada", img: ourWork4 },
-    { name: "BRANDING", title: "Ikka", location: "UAE", img: ourWork5 },
-    { name: "INVITATIONS", title: "Emroi", location: "Delhi, India", img: ourWork6 }
+    { name: "SHOOT", title: "Decoy Galleries", location: "San Francisco, California", img: ourWork7 },
+    { name: "Logo & Branding", title: "Thrivesys", location: "Minnesota, USA", img: ourWork9 },
 ]
 
 export const OUR_WORKS_PAGE_DATA2 = [
@@ -60,7 +67,7 @@ export const OUR_WORKS_PAGE_DATA2 = [
     { name: "SOCIAL MEDIA", title: "Branded", location: "Miami, Florida", img: ourWork3 },
     { name: "SOCIAL MEDIA", title: "Rivado", location: "Calgary, Canada", img: ourWork4 },
     { name: "BRANDING", title: "Ikka", location: "UAE", img: ourWork5 },
-    { name: "INVITATIONS", title: "Emroi", location: "Delhi, India", img: ourWork6 },
+    { name: "INVITATIONS", title: "Emori", location: "Delhi, India", img: ourWork6 },
     { name: "SHOOT", title: "Decoy Galleries", location: "San Francisco, California", img: ourWork7 },
     { name: "SHOOT", title: "Moena", location: "Banglore, India", img: ourWork8 },
     { name: "Logo & Branding", title: "Thrivesys", location: "Minnesota, USA", img: ourWork9 },
@@ -93,7 +100,6 @@ export const TARGET_AUDIENCE = [
         text: "that require a modern digital refresh"
     }
 ]
-
 
 export const SERVICES_DATA = [
     { img: ourWork1, name: "Global sourcing", mssg: "Quick video messages", price: "Free", keyFeatures: ["Product Souring", "Product Souring", "Product Souring", "Product Souring", "Product Souring", "Product Souring", "Product Souring", "Product Souring", "Product Souring", "Product Souring"] },
@@ -328,6 +334,35 @@ export const SERVICES_PAGE_DATA = [
 
 export const FOOTER_OPTIONS = [
     "Global Sourcing", "Branding", "Website Development", "Social Media Management", "Other"
+]
+
+export const PRIVATE_LABEL_PAGE_DATA = [
+    {
+        name: "Design & Development",
+        text: "From the sketches and designs, we develop moulds as the next step for your review and costings for complete production order. With extensive knowledge of various industries and trends, we can also assist you in creating a collection basis your objectives and business idea.",
+        image: privateLabel1,
+    },
+    {
+        name: "Prototype & Sampling",
+        text: "Our development team then works to bring the approved designs to life as prototypes and samples before final production. This will help you take a look and feel the product quality.",
+        image: privateLabel2,
+    },
+    {
+        name: "Production & Quality Control",
+        text: "Post approvals and on final order, we start the production process with utmost precision and care. Quality checks is of utmost priority for us at every stage, particularly during the final production phase to ensure it is in accordance",
+        image: privateLabel3,
+    },
+    {
+        name: "Packaging & Delivery",
+        text: "Once the production is ready, we carefully pack the products in preferred packaging after the requisite quality checks. We also offer packaging, labelling and branding services to create a brand if need be.",
+        image: privateLabel4,
+    },
+]
+
+export const HOW_WE_WORK_DATA = [
+    { title: "Discovery", image: how1, description: "We begin with deep-dive discovery, understanding your brand vision, product needs and target markets.", deliverables: "Strategy call, Brand/Product brief, Market research" },
+    { title: "Development", image: how2, description: "Our creative and sourcing teams work in parallel developing your brand identity and sourcing product solutions globally.", deliverables: "Brand concepts, Product samples, Prototypes" },
+    { title: "Refinement", image: how3, description: "We fine tune based on your feedback, ensure quality checks and finalize assets or supplier terms.", deliverables: "Final brand kit, QC reports, PO confirmations, Packaging deadlines" },
 ]
 
 

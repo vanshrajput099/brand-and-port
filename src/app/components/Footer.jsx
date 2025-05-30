@@ -1,9 +1,12 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import footerLogo from "@/assets/footerLogo.png"
 import Image from 'next/image'
 import { FOOTER_OPTIONS } from '@/data'
 
 const Footer = () => {
+    const [otherCheckBox, setOtherCheckBox] = useState(false);
+    const [otherValue, setOtherValue] = useState("");
     return (
         <>
             <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto flex flex-col md:flex-row py-10 md:py-20 border-b-2 border-b-gray-800 gap-10'>
@@ -29,11 +32,18 @@ const Footer = () => {
                                 FOOTER_OPTIONS.map((ele, idx) => {
                                     return (
                                         <div key={idx} className='flex items-center gap-2'>
-                                            <input type="checkbox" placeholder='Name*' className='border-b-2 w-6 h-6 placeholder:text-xl' />
+                                            <input onChange={(e) => { e.target.name === "Other" ? setOtherCheckBox((prev) => !prev) : setOtherCheckBox(false) }} name={ele} type="checkbox" placeholder='Name*' className='border-b-2 w-6 h-6 placeholder:text-xl' />
                                             <label className='' htmlFor="">{ele}</label>
                                         </div>
                                     )
                                 })
+                            }
+                            {
+                                otherCheckBox &&
+                                <div>
+                                    <input onChange={(e) => { setCheckBox(e.target.name); }} name={"Other"} type="text" placeholder='Other*' className='border-b-2 placeholder:text-xl' />
+                                </div>
+
                             }
                             <button className="orange-bg w-full xl:w-fit py-1 px-7 text-base rounded-3xl">Send</button>
                         </div>

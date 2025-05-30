@@ -47,8 +47,8 @@ export default function TestimonialCarousel() {
                                         />
                                         <p className="xl:text-xl body-text">{testimonial.quote}</p>
                                         <div className="body-text">
-                                            <h1 className="font-medium xl:text-xl">{testimonial.author}</h1>
-                                            <h1 className="xl:text-xl">{testimonial.location}</h1>
+                                            <h1 className="xl:text-xl orange-text font-bold">{testimonial.author}</h1>
+                                            <h1 className="text-xs xl:text-sm">{testimonial.location}</h1>
                                         </div>
                                     </div>
                                 );

@@ -4,7 +4,7 @@ import Rectangle from "@/assets/Rectangle.png"
 
 const Hero = () => {
     return (
-        <div className='px-2 xl:px-0 w-full mx-auto bg-black flex flex-col items-center py-40 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+        <div className='px-2 xl:px-0 w-full mx-auto bg-black flex flex-col items-center pt-40 pb-10 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
             <div className='bg-[#272423] px-3 py-1 body-text text-sm rounded-xl w-fit'>
                 <h1>Introducing Brand & Port</h1>
             </div>
@@ -23,9 +23,12 @@ const Hero = () => {
                 className="w-full sm:w-[80%] xl:w-[55%] mt-5"
                 controls
                 autoPlay
-                muted
                 playsInline
             ></video>
+            <div className='text-center body-text mt-5'>
+                <h1 className='text-base md:text-xl xl:text-2xl secondary-text-color'>Powering the best products and services </h1>
+                <h1 className='text-base md:text-xl xl:text-2xl'>From next-gen startups to established enterprises.</h1>
+            </div>
         </div>
     )
 }

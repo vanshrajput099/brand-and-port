@@ -5,10 +5,7 @@ import React from 'react'
 const Brands = () => {
     return (
         <div className='w-[98%] px-2 xl:px-0 xl:w-[60%] mx-auto bg-black py-10 space-y-10'>
-            <div className='text-center body-text'>
-                <h1 className='text-base md:text-xl xl:text-2xl secondary-text-color'>Powering the best products and services </h1>
-                <h1 className='text-base md:text-xl xl:text-2xl'>From next-gen startups to established enterprises.</h1>
-            </div>
+           
             <div className='grid grid-cols-3 gap-y-4 sm:grid-cols-4 lg:grid-cols-6'>
                 {
                     BRANDS.map((ele, idx) => <img key={idx} src={ele.src} className='' alt="" />)

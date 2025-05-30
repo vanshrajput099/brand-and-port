@@ -1,0 +1,34 @@
+import React from 'react'
+import mainFrame from "@/assets/mainFrame.png"
+import { PRIVATE_LABEL_PAGE_DATA } from '@/data'
+
+const page = () => {
+    return (
+        <>
+            <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[95%] xl:w-[60%] mx-auto mt-20'>
+                    <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Private label</h1>
+                    <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>We are passionate about exploring possibilities of classically modern-day lifestyles. And we leave no gap while working towards making that available to people via our range of leather goods.</p>
+                </div>
+            </div>
+
+            <div className='w-[95%] xl:w-[70%] mx-auto body-text space-y-5 py-5 xl:mt-20 xl:py-10 px-2'>
+                {
+                    PRIVATE_LABEL_PAGE_DATA.map((ele, idx) => {
+                        return (
+                            <div className={`flex flex-col items-center md:items-start md:flex-row ${idx % 2 !== 0 && "md:flex-row-reverse"} justify-between space-y-5`}>
+                                <div className='w-full md:w-1/2 mt-6 space-y-4'>
+                                    <h1 className='text-2xl md:text-3xl xl:text-5xl'>{ele.name}</h1>
+                                    <p className='secondary-text-color font-light text-sm xl:text-base'>{ele.text}</p>
+                                </div>
+                                <img className='w-[70%] sm:w-[50%] md:w-[40%]' src={ele.image.src} alt="" />
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </>
+    )
+}
+
+export default page

@@ -1,9 +1,10 @@
 import { OUR_WORKS_DATA2 } from '@/data'
+import Link from 'next/link'
 import React from 'react'
 
 const OurWork = () => {
     return (
-        <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto py-20'>
+        <div className='w-full px-2 xl:px-0 xl:w-[65%] mx-auto py-15'>
             <h1 className='text-3xl md:text-5xl xl:text-7xl heading-text'>Our Work</h1>
             <div className="w-[90%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
                 {
@@ -29,8 +30,10 @@ const OurWork = () => {
                     ))
                 }
             </div>
-            <div className='flex justify-center py-20'>
-                <button className='orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text'>Explore More</button>
+            <div className='flex justify-center py-10'>
+                <Link href={"/our-work"}>
+                    <button className="hover:cursor-pointer orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text">Know More</button>
+                </Link>
             </div>
         </div>
     )

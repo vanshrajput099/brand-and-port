@@ -1,6 +1,6 @@
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
-import { FAQS, SERVICES_DATA, SERVICES_PAGE_DATA } from '@/data'
+import { FAQS, SERVICES_PAGE_DATA } from '@/data'
 import {
     Accordion,
     AccordionContent,

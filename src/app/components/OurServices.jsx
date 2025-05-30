@@ -4,10 +4,11 @@ import services1 from "@/assets/services1.png";
 import services2 from "@/assets/services2.png";
 import services3 from "@/assets/services3.png";
 import services4 from "@/assets/services4.png";
+import Link from 'next/link';
 
 const OurServices = () => {
     return (
-        <div className='w-full min-h-screen mx-auto bg-black py-20 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+        <div className='w-full min-h-screen mx-auto bg-black py-15 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
             <div className='w-[95%] xl:w-[60%] mx-auto'>
                 <div className='space-y-5'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl font-medium heading-text bg-gradient-to-r from-white via-black via-80% xl:via-60% to-black bg-clip-text text-transparent'>Our Services</h1>
@@ -54,8 +55,10 @@ const OurServices = () => {
 
                 </div>
 
-                <div className='flex justify-center mt-20'>
-                    <button className="orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text">Know More</button>
+                <div className='flex justify-center mt-10'>
+                    <Link href={"/services"}>
+                        <button className="hover:cursor-pointer orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text">Know More</button>
+                    </Link>
                 </div>
 
 

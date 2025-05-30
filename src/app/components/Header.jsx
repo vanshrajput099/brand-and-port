@@ -8,7 +8,7 @@ import NavSheet from './NavSheet'
 
 const Header = () => {
     return (
-        <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[60%] mx-auto py-10 border-b-2 border-b-gray-700'>
+        <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[80%] mx-auto py-10 border-b-2 border-b-gray-700'>
             <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[180px] h-[30px] hidden xl:block' />
             <div className='flex justify-between items-center w-[90%] mx-auto xl:hidden'>
                 <NavSheet>
