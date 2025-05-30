@@ -1,6 +1,6 @@
+"use client"
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
-import Rectangle from "@/assets/Rectangle.png"
 
 const Hero = () => {
 
@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className='body-text w-[90%] xl:w-[70%] mx-auto space-y-5'>
                     <p className='text-base md:text-xl xl:text-2xl font-light secondary-text-color'>From sourcing the right product to shaping the perfect branding, we craft the journey from shelf to spotlight.</p>
                     <button onClick={handleSchedule} className="hover:cursor-pointer orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl">Schedule A Call </button>
-                </div>  
+                </div>
             </div>
             <video
                 src="/assets/mainVideo.mp4"
