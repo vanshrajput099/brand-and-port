@@ -3,10 +3,12 @@ import React, { useState } from 'react'
 import footerLogo from "@/assets/footerLogo.png"
 import Image from 'next/image'
 import { FOOTER_OPTIONS } from '@/data'
+import { usePathname } from 'next/navigation'
 
 const Footer = () => {
     const [otherCheckBox, setOtherCheckBox] = useState(false);
     const [otherValue, setOtherValue] = useState("");
+    const pathname = usePathname();
     return (
         <>
             <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto flex flex-col md:flex-row py-10 md:py-20 border-b-2 border-b-gray-800 gap-10'>
@@ -18,7 +20,7 @@ const Footer = () => {
                     <p className='orange-text text-xl font-light'>info@thebrandandport.com</p>
                 </div>
                 <div className='w-full xl:w-1/2 px-5 xl:px-0 body-text space-y-7'>
-                    <h1>Let us create an extraordinary brand that elevates your business. Please fill out the following form, and one of us will get back to you as soon as possible.</h1>
+                    {pathname !== "/contact-us" && <h1>Let us create an extraordinary brand that elevates your business. Please fill out the following form, and one of us will get back to you as soon as possible.</h1>}
                     <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-5'>
                         <input type="text" placeholder='Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
                         <input type="text" placeholder='Email*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
