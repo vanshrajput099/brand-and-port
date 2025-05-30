@@ -32,7 +32,7 @@ const OurWork = () => {
             </div>
             <div className='flex justify-center py-10'>
                 <Link href={"/our-work"}>
-                    <button className="hover:cursor-pointer orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text">Know More</button>
+                    <button className="hover:cursor-pointer orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text">Explore More</button>
                 </Link>
             </div>
         </div>

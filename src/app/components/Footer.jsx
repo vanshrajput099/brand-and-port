@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto flex flex-col md:flex-row py-10 md:py-20 border-b-2 border-b-gray-800 gap-10'>
                 <div className='w-full xl:w-1/2 px-5 space-y-7 body-text'>
                     <Image src={footerLogo.src} alt='brandLogo.png' height={200} width={300} className='' />
-                    <p className='xl:text-xl font-light'>Want to see if we’re the right fit to work together? Schedule a quick 15 min zoom chat with Vineet Hawelia, to clear up any questions you may have.</p>
+                    <p className='xl:text-xl font-light'>Want to see if we’re the right fit to work together? Schedule a quick 15 min zoom chat with Us to clear up any questions you may have.</p>
                     <button className="orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl">Schedule A Call </button>
                     <h1 className='text-xl font-light'>New Business Enquiries:</h1>
                     <p className='orange-text text-xl font-light'>info@thebrandandport.com</p>
