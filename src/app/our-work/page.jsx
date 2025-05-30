@@ -40,7 +40,7 @@ const page = () => {
 
 
             <div className='w-full md:w-[90%] xl:w-[65%] mx-auto flex justify-end xl:mt-10 py-10 xl:py-20'>
-                <h1 className='text-right px-5 sm:text-right xl:w-[80%] heading-text text-3xl sm:text-5xl xl:text-7xl'>Let’s Make You the Next Highlight.</h1>
+                <h1 className='text-right px-5 sm:text-right xl:w-[80%] heading-text text-3xl sm:text-5xl xl:text-7xl'>Let’s Make You the <br /> Next Highlight.</h1>
             </div>
 
         </>
