@@ -11,7 +11,7 @@ const HowWeWork = () => {
                 <p className='text-base md:text-xl xl:text-2xl w-[70%] mx-auto body-text'>Plan visually, collaborate in cross-team projects, and make better decisions with progress insights and project updates.</p>
             </div>
 
-            <div className='w-[95%] mx-auto mt-20 xl:mt-30 space-y-12 xl:space-y-20'>
+            <div className='w-[80%] mx-auto mt-20 xl:mt-30 space-y-12 xl:space-y-20'>
 
                 {
                     HOW_WE_WORK_DATA.map((ele, idx) => {

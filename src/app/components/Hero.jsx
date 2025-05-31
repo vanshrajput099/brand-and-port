@@ -20,7 +20,7 @@ const Hero = () => {
                 </div>
                 <div className='body-text w-full mx-auto space-y-5'>
                     <p className='text-sm sm:text-base md:text-xl xl:text-2xl font-light secondary-text-color'>From sourcing the right product to shaping the perfect branding, we craft the journey from shelf to spotlight.</p>
-                    <button onClick={handleSchedule} className="hover:cursor-pointer orange-bg py-2 w-[50%] xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl">Schedule A Call </button>
+                    <button onClick={handleSchedule} className="hover:cursor-pointer orange-bg py-2 w-[50%] md:w-[30%] lg:w-[20%] xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl">Schedule A Call </button>
                 </div>
             </div>
             <video
