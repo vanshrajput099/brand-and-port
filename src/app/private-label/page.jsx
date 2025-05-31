@@ -8,7 +8,7 @@ const page = () => {
             <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center py-30 pb-20space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
                 <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[70%] xl:gap-10 mx-auto mt-20'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Private label</h1>
-                    <p className='body-text secondary-text-color text-base md:text-xl lg:w-[50%]'>We are passionate about exploring possibilities of classically modern-day lifestyles. And we leave no gap while working towards making that available to people via our range of products.</p>
+                    <p className='body-text text-left secondary-text-color text-base md:text-xl lg:w-[50%]'>We are passionate about exploring possibilities of classically modern-day lifestyles. And we leave no gap while working towards making that available to people via our range of products.</p>
                 </div>
             </div>
 
