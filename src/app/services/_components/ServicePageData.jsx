@@ -2,6 +2,7 @@
 import React from 'react'
 import { SERVICES_PAGE_DATA } from '@/data';
 import { Check } from 'lucide-react';
+import mainFrame from "@/assets/mainFrame.png"
 
 const ServicePageData = () => {
 
