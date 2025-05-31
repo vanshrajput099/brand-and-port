@@ -6,13 +6,13 @@ import stats from "@/assets/stats.png"
 const page = () => {
     return (
         <>
-            <div className='relative w-full px-2 mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
-                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
+            <div className='w-full px-2 mx-auto bg-black flex flex-col items-center py-30 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+                <div className='relative flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Our Work</h1>
                     {/* <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.
                     </p> */}
                 </div>
-                <img className='absolute top-[70%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" />
+                <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" />
             </div>
             <div className="w-[90%] lg:w-[70%] xl:w-[60%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
                 {
@@ -38,8 +38,8 @@ const page = () => {
                     ))
                 }
             </div>
-            <div className='relative w-full md:w-[90%] xl:w-[65%] mx-auto flex justify-end xl:mt-10 py-10 xl:py-20'>
-                <h1 className='text-right px-5 sm:text-right xl:w-[80%] heading-text text-3xl sm:text-5xl xl:text-7xl'>Let’s Make You the <br /> Next Highlight.</h1>
+            <div className='relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-20'>
+                <h1 className='px-5 text-center heading-text text-3xl sm:text-5xl xl:text-7xl'>Let’s Make You the <br /> Next Highlight.</h1>
                 <img className='absolute w-full -top-[20%] right-0 sm:-top-[80%] md:-right-[0%] md:w-[70%] xl:-top-[25%] xl:-right-[20%] xl:w-[60%] -z-10' src={stats.src} alt="" />
             </div>
         </>

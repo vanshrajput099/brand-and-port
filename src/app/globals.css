@@ -56,9 +56,15 @@
   background-color: #C95D39;
 }
 
+.orange-bg:disabled {
+  background-color: #432014;
+}
+
 .orange-text {
   color: #C95D39;
 }
+
+
 
 .w-container {
   width: 60%;

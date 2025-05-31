@@ -11,25 +11,26 @@ import { usePathname } from 'next/navigation';
 const Header = () => {
 
     const pathname = usePathname();
-    console.log(pathname, `${HEADER_NAVS[0].href}`)
 
     return (
         <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[80%] mx-auto py-10 border-b-2 border-b-gray-700'>
-            <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[180px] h-[30px] hidden xl:block' />
+            <Link href={"/"}>
+                <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[270px] h-[50px] hidden xl:block hover:cursor-pointer' />
+            </Link>
             <div className='flex justify-between items-center w-[90%] mx-auto xl:hidden'>
                 <NavSheet>
                     <Menu className='xl:hidden' />
                 </NavSheet>
-                <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[180px] h-[30px]' />
+                <Link href={"/"}>
+                    <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[200px] h-[35px] hover:cursor-pointer' />
+                </Link>
             </div>
             <div className='gap-7 hidden xl:flex'>
                 {
                     HEADER_NAVS.map((ele, idx) => {
-                        return <button key={idx} className={`hover:cursor-pointer ${pathname === `${ele.href}` && "orange-text"}`}>
-                            <Link className={`body-text text-sm hover:cursor-pointer`} href={ele.href}>
-                                {ele.name}
-                            </Link>
-                        </button>
+                        return <Link key={idx} className={`body-text text-sm hover:cursor-pointer ${pathname === ele.href && "orange-text"}`} href={ele.href}>
+                            {ele.name}
+                        </Link>
                     })
                 }
             </div>

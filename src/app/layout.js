@@ -2,6 +2,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Inter, Outfit } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
+import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +28,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${outfit.variable} antialiased text-white`}
       >
+        <CustomCursor />
         <Header />
+        <Toaster />
         {children}
         <Footer />
       </body>
