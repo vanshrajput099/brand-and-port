@@ -1,16 +1,21 @@
 "use client";
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
-import { FAQS, FAQs_2, SERVICES_PAGE_DATA } from '@/data'
+import { FAQS, FAQs_2, SERVICES_PAGE_DATA } from '@/data';
+import { Check } from 'lucide-react';
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import stats from "@/assets/stats.png"
 
 const page = () => {
+
+    const handleSchedule = () => {
+        window.open("https://calendly.com/salonitcn/30min?month=2025-05", "_blank")
+    }
+
     return (
         <>
             <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center py-20 pb-10 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
@@ -19,7 +24,6 @@ const page = () => {
                     <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>Whether you’re starting out or scaling up, we’ve got a package that fits. Choose the plan that meets your vision, budget, and momentum.
                     </p>
                 </div>
-                {/* <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" /> */}
             </div>
 
             <div className='w-[80%] md:w-[80%] lg:w-[70%] mx-auto py-10 body-text space-y-10 flex justify-between flex-wrap lg:gap-10'>
@@ -30,14 +34,20 @@ const page = () => {
                                 <img className='w-full h-[150px] lg:h-[250px] mx-auto object-cover' src={ele.image.src} alt="" />
                                 <h1 className='text-xl lg:text-3xl font-medium'>{ele.title}</h1>
                                 <p className='text-sm lg:text-base'>{ele.description}</p>
-                                <h1 className='text-xl lg:text-3xl font-medium'>{ele.price}</h1>
+                                {
+                                    ele.price === "Schedule A Call" ?
+                                        <h1 onClick={handleSchedule} className='hover:cursor-pointer hover:text-[#C95D39] text-xl lg:text-xl font-medium text-gray-400'>{ele.price}</h1>
+                                        : <h1 className='text-xl lg:text-xl font-medium text-gray-400'>{ele.price}</h1>
+                                }
                                 <hr className='w-full lg:w-[70%]' />
                                 <p className='text-sm lg:text-base'>Key Features</p>
                                 <div>
                                     <ul className='space-y-2'>
                                         {
                                             ele.keyFeatures.map((features, index) => {
-                                                return <li className='text-xs lg:text-base' key={index}>✔️ <span className='ml-4'>{features}</span></li>
+                                                return <li className='text-xs lg:text-base flex gap-2 items-center' key={index}>
+                                                    <Check color="#c95d39" /> <span className=''>{features}</span>
+                                                </li>
                                             })
                                         }
                                     </ul>

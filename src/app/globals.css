@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@tailwind utilities;
 
 @custom-variant dark (&:is(.dark *));
 
@@ -63,8 +64,6 @@
 .orange-text {
   color: #C95D39;
 }
-
-
 
 .w-container {
   width: 60%;
@@ -165,5 +164,38 @@ body {
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  @keyframes logoAnimation {
+    0% {
+      transform: translateY(10px) scale(0.8);
+    }
+
+    100% {
+      transform: translateY(-10px) scale(1.1);
+    }
+  }
+
+  .animate-up-down {
+    animation: logoAnimation 1s ease-in-out infinite alternate-reverse forwards;
+  }
+
+  .strech-effect {
+    /* transition: transform 0.2s ease-in-out;
+    transform: scaleX(1.2) scaleY(0.8); */
+    background: linear-gradient(from bottom right, white, orange);
+    /* animation: strechEffect 1s ease-in-out 0 infinite alternate-reverse forwards; */
+  }
+
+  @keyframes strechEffect {
+    from {
+      transform: scaleX(1.2) scaleY(0.8);
+    }
+
+    to {
+      transform: scaleX(1) scaleY(1);
+    }
   }
 }

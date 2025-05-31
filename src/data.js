@@ -299,7 +299,7 @@ export const SERVICES_PAGE_DATA = [
     {
         title: "Global sourcing",
         description: "Quick video messages",
-        price: "Free",
+        price: "Schedule A Call",
         keyFeatures: [
             "Product sourcing",
             "Sampling and product development",
@@ -312,7 +312,7 @@ export const SERVICES_PAGE_DATA = [
     {
         title: "Brand Identity Design",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $14,000",
         keyFeatures: [
             "Discovery",
             "Brand Strategy",
@@ -325,7 +325,7 @@ export const SERVICES_PAGE_DATA = [
     {
         title: "Website Development",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $18,000",
         keyFeatures: [
             "Wireframe, UI & UX",
             "Content Writing",
@@ -337,23 +337,17 @@ export const SERVICES_PAGE_DATA = [
     {
         title: "Social Media Content Strategy",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $3,000",
         keyFeatures: [
             "Content Planning for Instagram & Facebook",
             "Social Media Kit",
-            "Corporate Stationary (US $)",
-            "Business Card",
-            "Letterhead",
-            "Envelope",
-            "Folder",
-            "e-Signature"
         ],
         image: servicesPage4, // Add image URL or import
     },
     {
         title: "Packaging Design",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $1,500 to $4,500",
         keyFeatures: [
             "Master Packaging",
             "Print Ready Files",
@@ -364,17 +358,17 @@ export const SERVICES_PAGE_DATA = [
     {
         title: "Billboard / Poster Ads",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $4,000",
         keyFeatures: [
             "2 Creatives",
-            "Each Variant (Extra $)"
+            "Each Variant (Extra $1,500)"
         ],
         image: servicesPage6, // Add image URL or import
     },
     {
         title: "Powerpoint Deck",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $1,800",
         keyFeatures: [
             "10 Slides"
         ],
@@ -383,7 +377,7 @@ export const SERVICES_PAGE_DATA = [
     {
         title: "Brochure",
         description: "Quick video messages",
-        price: "Free",
+        price: "CA $4,800",
         keyFeatures: [
             "20 pages",
             "Print Ready Files"

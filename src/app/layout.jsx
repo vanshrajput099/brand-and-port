@@ -4,6 +4,8 @@ import "./globals.css";
 import { Inter, Outfit } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner"
 import CustomCursor from "@/components/CustomCursor";
+import Logo from "./components/Logo";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,6 +33,7 @@ export default function RootLayout({ children }) {
         <CustomCursor />
         <Header />
         <Toaster />
+        <Logo />
         {children}
         <Footer />
       </body>
