@@ -12,7 +12,7 @@ const Footer = () => {
 
     const [selectedOption, setSelectedOption] = useState('');
     const [otherInput, setOtherInput] = useState('');
-    const [errors, setErros] = useState({});
+    const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
     const pathname = usePathname();
 
@@ -85,23 +85,23 @@ const Footer = () => {
                         <p className='orange-text text-xl font-light'>contact@thebrandandport.com</p>
                     </div>
                 </div>
-                <div className='w-full xl:w-1/2 px-5 xl:px-0 body-text space-y-7'>
+                <div className={`w-full xl:w-1/2 px-5 xl:px-0 body-text space-y-7 ${pathname === "/contact-us" && "md:mt-9"}`}>
                     {pathname !== "/contact-us" && <h1>Let us create an extraordinary brand that elevates your business. Please fill out the following form, and one of us will get back to you as soon as possible.</h1>}
                     <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-5'>
                         <div className='space-y-2'>
-                            <input value={formData.name || ""} onChange={addDataInForm} type="text" name='name' placeholder='Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.name || ""} onChange={addDataInForm} type="text" name='name' placeholder='Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-base' />
                             {errors.name && <p className='text-red-500 text-xs'>{errors.name}</p>}
                         </div>
                         <div className='space-y-2'>
-                            <input value={formData.email || ""} onChange={addDataInForm} type="email" name='email' placeholder='Email*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.email || ""} onChange={addDataInForm} type="email" name='email' placeholder='Email*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-base' />
                             {errors.email && <p className='text-red-500 text-xs'>{errors.email}</p>}
                         </div>
                         <div className='space-y-2'>
-                            <input value={formData.location || ""} onChange={addDataInForm} type="text" name='location' placeholder='Location*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.location || ""} onChange={addDataInForm} type="text" name='location' placeholder='Location*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-base' />
                             {errors.location && <p className='text-red-500 text-xs'>{errors.location}</p>}
                         </div>
                         <div className='space-y-2'>
-                            <input value={formData.companyName || ""} onChange={addDataInForm} type="text" name='companyName' placeholder='Company Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.companyName || ""} onChange={addDataInForm} type="text" name='companyName' placeholder='Company Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-base' />
                             {errors.companyName && <p className='text-red-500 text-xs'>{errors.companyName}</p>}
                         </div>
                     </div>
@@ -114,14 +114,14 @@ const Footer = () => {
                                         <input
                                             type="checkbox"
                                             name="helpWith"
-                                            className='border-b-2 w-6 h-6 placeholder:text-xl'
+                                            className='border-b-2 w-6 h-6 placeholder:text-base'
                                             checked={selectedOption === ele}
                                             onChange={() => {
-                                                setErros({})
+                                                setErrors({})
                                                 setSelectedOption(prev => prev === ele ? '' : ele);
                                             }}
                                         />
-                                        <label className=''>{ele}</label>
+                                        <label className='text-sm'>{ele}</label>
                                     </div>
                                 );
                             })}
@@ -133,7 +133,7 @@ const Footer = () => {
                                         placeholder="Query..."
                                         className=" p-2 border border-gray-300 rounded"
                                         value={otherInput}
-                                        onChange={(e) => { setOtherInput(e.target.value); setErros({}); }}
+                                        onChange={(e) => { setOtherInput(e.target.value); setErrors({}); }}
                                     />
                                 )}
 
@@ -148,7 +148,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center py-2 md:pb-10'>
-                <p className='text-sm xl:text-xl'>© 2025 The Brand & Port. All rights reserved.</p>
+                <p className='text-sm xl:text-base'>© 2025 The Brand & Port. All rights reserved.</p>
             </div>
         </>
     )
