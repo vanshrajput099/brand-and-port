@@ -13,7 +13,7 @@ const AboutUs = () => {
     return (
         <div className='space-y-5 w-full px-5 xl:px-0 xl:w-[60%] mx-auto xl:w-container py-10'>
             <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl bg-gradient-to-r from-white via-black via-80% xl:via-50% to-black bg-clip-text text-transparent'>About Us</h1>
-            <div className='body-text space-y-10 text-sm md:text-base xl:text-xl mt-10'>
+            <div className='body-text space-y-2 xl:space-y-10 text-sm md:text-base xl:text-xl mt-10'>
                 <p>At The Brand and Port, we offer more than just services we deliver a complete journey for your product. With two powerful pillars at the core of our business Global Sourcing and Branding & Advertising we help you move from idea to impact, seamlessly and strategically. We begin at the source identifying and procuring high-quality, sustainable, and white-label products through our trusted global sourcing network. Whether you’re a startup exploring your first line or an established brand expanding into new categories, we help you source smarter and more responsibly.
                 </p>
                 <p className='orange-text'>But we don’t stop there!</p>

@@ -16,7 +16,7 @@ const page = () => {
                 {
                     PRIVATE_LABEL_PAGE_DATA.map((ele, idx) => {
                         return (
-                            <div key={idx} className={`flex flex-col items-center md:items-start md:flex-row ${idx % 2 !== 0 && "md:flex-row-reverse"} justify-between space-y-5`}>
+                            <div key={idx} className={`flex flex-col items-center md:flex-row ${idx % 2 !== 0 && "md:flex-row-reverse"} justify-between space-y-5`}>
                                 <div className='w-full md:w-1/2 mt-6 space-y-4'>
                                     <h1 className='text-2xl md:text-3xl xl:text-5xl'>{ele.name}</h1>
                                     <p className='secondary-text-color font-light text-sm xl:text-base'>{ele.text}</p>

@@ -6,7 +6,7 @@ import { OUR_BLOGS } from '@/data'
 const page = () => {
   return (
     <>
-      <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center pt-30 pb-10 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+      <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center pt-20 pb-10 xl:pb-15 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
         <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
           <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Blogs</h1>
           {/* <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.
@@ -17,8 +17,8 @@ const page = () => {
       <div className='w-[90%] xl:w-[65%] mx-auto py-10 md:py-10 md:mt-30 xl:mt-40'>
         <div className='flex justify-center gap-5 md:flex-row body-text relative'>
 
-          <div className='w-full md:w-[55%] lg:w-[50%] rounded-2xl space-y-5 bg-[#171717]/90 p-3 md:px-10 md:pr-20 xl:pr-40 md:py-5 relative overflow-visible'>
-            <div className='w-[90%] xl:w-full space-y-5'>
+          <div className='w-full md:w-[65%] lg:w-[50%] rounded-2xl space-y-5 bg-[#171717]/90 p-3 md:px-10 md:pr-20 xl:pr-40 md:py-5 relative overflow-visible'>
+            <div className='w-[90%]  xl:w-full space-y-5'>
               <h1 className='text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium heading-text'>
                 The Benefits and Challenges of Sourcing from India
               </h1>
@@ -33,7 +33,7 @@ const page = () => {
             <img
               src={world.src}
               alt=""
-              className="w-full h-[100px] sm:h-[200px] object-cover md:absolute -top-10 -right-10 md:h-[200px] lg:h-[250px] xl:h-[300px] md:-top-[130px] md:-right-[70%] lg:-right-[70%]  md:object-contain z-10"
+              className="w-full h-[100px] sm:h-[200px] object-cover md:absolute -top-10 -right-10 md:h-[180px] lg:h-[200px] xl:h-[300px] md:-top-[110px] md:-right-[50%] lg:-right-[70%]  md:object-contain z-10"
             />
           </div>
           

@@ -7,12 +7,12 @@ const page = () => {
     return (
         <>
             <div className='w-full px-2 mx-auto bg-black flex flex-col items-center pt-30 pb-10 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
-                <div className='relative flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
+                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[60%] mx-auto mt-20'>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>Our Work</h1>
                     {/* <p className='body-text secondary-text-color text-base md:text-xl lg:w-[60%]'>OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity.
                     </p> */}
                 </div>
-                <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" />
+                {/* <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" /> */}
             </div>
             <div className="w-[90%] lg:w-[70%] xl:w-[60%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
                 {
@@ -29,7 +29,7 @@ const page = () => {
                             <div className="px-4 py-4">
                                 <h1 className="px-3 py-1 text-xs rounded-md w-fit bg-white text-black mb-2">{ele.name}</h1>
                                 <h2 className="text-sm font-medium">{ele.title}</h2>
-                                <p className="text-xs text-gray-400">{ele.location}</p>
+                                <p className="text-xs orange-text">{ele.location}</p>
                                 <button className="mt-4 px-4 py-1 text-xs border border-gray-600 bg-[#2a2a2a] rounded-xl hover:bg-[#333] transition">
                                     Explore
                                 </button>

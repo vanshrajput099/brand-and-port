@@ -200,6 +200,64 @@ export const FAQS = [
     },
 ];
 
+export const FAQs_2 = [
+    {
+        question: "What services do you offer under branding?",
+        answer:
+            "We provide end-to-end branding services including brand strategy, logo design, visual identity systems, brand voice development, packaging design, and more.",
+        category: "Branding",
+    },
+    {
+        question: "How do you approach social media management?",
+        answer:
+            "We craft tailored social media strategies, create platform-specific content, manage posting schedules, engage with your audience, and track performance to ensure measurable results.",
+        category: "Social Media",
+    },
+    {
+        question: "Can you help us rebrand our existing business?",
+        answer:
+            "Absolutely. Whether it's a full rebrand or a brand refresh, we audit your current identity and reposition your brand to align with your goals and market trends.",
+        category: "Branding",
+    },
+    {
+        question: "What industries do you work with?",
+        answer:
+            "We work across diverse industries including fashion, F&B, wellness, sustainability, tech, luxury, and more offering customized strategies for each.",
+        category: "General",
+    },
+    {
+        question: "Do you offer content creation for social media?",
+        answer:
+            "Yes, we handle everything from ideation to execution, including photography, videography, reels, carousels, copywriting, and motion graphics.",
+        category: "Content Creation",
+    },
+    {
+        question: "What types of websites do you build?",
+        answer:
+            "We design and develop a wide range of websites including corporate sites, e-commerce stores, portfolio sites, landing pages, and custom platforms tailored to your business goals.",
+        category: "Web Development",
+    },
+    {
+        question: "Do you offer both design and development?",
+        answer:
+            "Yes, we offer end-to-end services including UI/UX design, wireframing, front-end development, back-end integration, and testing.",
+        category: "Web Development",
+    },
+    {
+        question: "What’s the process to get started?",
+        answer:
+            "We begin with a discovery call to understand your goals, followed by a proposal outlining the scope, deliverables, timelines, and investment. Once aligned, we onboard you and kick off the project.",
+        category: "General",
+    },
+    {
+        question: "Can you collaborate with our in-house team or freelancers?",
+        answer:
+            "Definitely. We’re flexible with collaboration and can seamlessly integrate with your existing team to enhance execution and strategy.",
+        category: "Collaboration",
+    },
+];
+
+
 export const FEATURES_DATA = [
     {
         title: "Sustainable & Scalable Solutions",
@@ -281,7 +339,7 @@ export const SERVICES_PAGE_DATA = [
         description: "Quick video messages",
         price: "Free",
         keyFeatures: [
-            "Content Planning for TikTok & Instagram",
+            "Content Planning for Instagram & Facebook",
             "Social Media Kit",
             "Corporate Stationary (US $)",
             "Business Card",
