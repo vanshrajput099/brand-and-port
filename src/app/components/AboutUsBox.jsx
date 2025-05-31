@@ -7,7 +7,7 @@ const AboutUsBox = ({ data }) => {
                 <img className='h-7 w-7 object-cover' src={data.icon.src} alt="" />
                 <h1 className='text-sm lg:text-xl'>{data.title}</h1>
             </div>
-            <p className='secondary-text-color text-sm lg:text-xl'>{data.description}</p>
+            <p className='secondary-text-color text-sm lg:text-base'>{data.description}</p>
         </div>
     )
 }

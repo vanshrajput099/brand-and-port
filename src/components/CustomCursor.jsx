@@ -14,10 +14,17 @@ export default function CustomCursor() {
 
     return (
         <div
-            className="pointer-events-none fixed top-0 left-0 z-[9999] w-7 h-7 bg-orange-500 rounded-full mix-blend-difference transition-transform duration-50 ease-out"
+            className="pointer-events-none fixed top-0 left-0 z-[9999] mix-blend-difference"
             style={{
-                transform: `translate(${position.x - 12}px, ${position.y - 12}px)`,
+                transform: `translate(${position.x}px, ${position.y}px)`,
             }}
-        />
+        >
+            <div
+                className="w-6 h-6 rounded-full border border-orange-500 flex items-center justify-center"
+                style={{ transform: 'translate(-50%, -50%)' }}
+            >
+                <div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+            </div>
+        </div>
     );
 }

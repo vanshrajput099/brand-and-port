@@ -22,9 +22,7 @@ const AboutUs = () => {
                 </p>
                 <p>With us, your brand doesn’t just start strong, it grows, connects, and leads.</p>
             </div>
-
             <img src={aboutUsGroup.src} className='mt-10 md:mt-15 xl:mt-20' alt="" />
-
             {/* <div className='mt-20 grid grid-cols-3 xl:grid xl:grid-cols-5 gap-x-5'>
                 {
                     images.map((ele, idx) => {
