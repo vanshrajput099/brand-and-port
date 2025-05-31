@@ -14,7 +14,7 @@ const page = () => {
                 </div>
                 {/* <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" /> */}
             </div>
-            <div className="w-[90%] lg:w-[70%] xl:w-[60%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
+            <div className="w-[80%] lg:w-[70%] xl:w-[60%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
                 {
                     OUR_WORKS_PAGE_DATA2.map((ele, idx) => (
                         <div

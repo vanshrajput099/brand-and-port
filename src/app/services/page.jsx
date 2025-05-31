@@ -22,7 +22,7 @@ const page = () => {
                 {/* <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" /> */}
             </div>
 
-            <div className='w-[90%] md:w-[80%] lg:w-[70%] mx-auto py-10 body-text space-y-10 flex justify-between flex-wrap lg:gap-10'>
+            <div className='w-[80%] md:w-[80%] lg:w-[70%] mx-auto py-10 body-text space-y-10 flex justify-between flex-wrap lg:gap-10'>
                 {
                     SERVICES_PAGE_DATA.map((ele, idx) => {
                         return (
@@ -49,9 +49,9 @@ const page = () => {
             </div>
 
 
-            <div className='w-[98%] px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-20 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+            <div className='w-full px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-10 xl:py-20 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
                 <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>FAQs</h1>
-                <div className='flex flex-col md:flex-row gap-10 w-full mt-10'>
+                <div className='w-full mx-auto flex flex-col md:flex-row gap-10 mt-10'>
                     <div className='w-full xl:w-1/2'>
                         <h1 className='text-center text-xl md:text-2xl lg:text-3xl'>Global Sourcing</h1>
                         <div className='w-full flex flex-col items-center gap-5 mt-10'>
@@ -60,8 +60,8 @@ const page = () => {
                                     return (
                                         <Accordion key={idx} type="single" collapsible className={'bg-[#262120] rounded-4xl w-[90%] px-5 body-text'}>
                                             <AccordionItem value="item-1">
-                                                <AccordionTrigger className={'orange-text'}>{ele.question}</AccordionTrigger>
-                                                <AccordionContent >
+                                                <AccordionTrigger className={'orange-text text-xs sm:text-base'}>{ele.question}</AccordionTrigger>
+                                                <AccordionContent className={'text-xs sm:text-base'}>
                                                     {ele.answer}
                                                 </AccordionContent>
                                             </AccordionItem>
@@ -79,8 +79,8 @@ const page = () => {
                                     return (
                                         <Accordion key={idx} type="single" collapsible className={'bg-[#262120] rounded-4xl w-[90%] px-5 body-text'}>
                                             <AccordionItem value="item-1">
-                                                <AccordionTrigger className={'orange-text'}>{ele.question}</AccordionTrigger>
-                                                <AccordionContent >
+                                                <AccordionTrigger className={'orange-text text-xs'}>{ele.question}</AccordionTrigger>
+                                                <AccordionContent className={'text-xs'}>
                                                     {ele.answer}
                                                 </AccordionContent>
                                             </AccordionItem>
