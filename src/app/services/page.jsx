@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
 import { FAQS, FAQs_2, SERVICES_PAGE_DATA } from '@/data';
