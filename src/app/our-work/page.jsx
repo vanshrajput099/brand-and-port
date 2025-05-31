@@ -38,9 +38,30 @@ const page = () => {
                     ))
                 }
             </div>
-            <div className='relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-20'>
-                <h1 className='px-5 text-center heading-text text-3xl sm:text-5xl xl:text-7xl'>Let’s Make You the <br /> Next Highlight.</h1>
-                <img className='absolute w-full -top-[20%] right-0 sm:-top-[80%] md:-right-[0%] md:w-[70%] xl:-top-[25%] xl:-right-[20%] xl:w-[60%] -z-10' src={stats.src} alt="" />
+            <div className="relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-20">
+                <h1 className="px-5 text-center heading-text text-3xl sm:text-5xl xl:text-7xl">
+                    Let’s Make You the <br /> Next Highlight.
+                </h1>
+                <img
+                    className="
+      absolute 
+      w-full 
+      top-[-40px]          
+      right-0 
+      sm:top-[-150px]       
+      md:right-0           
+      md:w-[70%] 
+      xl:top-[-60px]      
+      xl:right-[-10%]      
+      xl:w-[70%] 
+      z-0                  
+      transform
+      will-change-transform
+      backface-visibility-hidden
+      "
+                    src={stats.src}
+                    alt=""
+                />
             </div>
         </>
     )

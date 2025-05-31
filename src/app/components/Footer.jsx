@@ -76,17 +76,17 @@ const Footer = () => {
             <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto flex flex-col md:flex-row py-10 md:py-20 border-b-2 border-b-gray-800 gap-10'>
                 <div className='w-full xl:w-1/2 px-5 space-y-7 body-text'>
                     {pathname !== "/contact-us" && <Image src={footerLogo.src} alt='brandLogo.png' height={200} width={300} className='h-[150px] w-[250px]' />}
-                    <p className='text-sm xl:text-xl font-light'>Want to see if we’re the right fit to work together? Schedule a quick 15 min zoom chat with us to clear up any questions you may have.</p>
+                    <p className='text-sm xl:text-base font-light'>Want to see if we’re the right fit to work together? Schedule a quick 15 min zoom chat with us to clear up any questions you may have.</p>
                     <div className={` pb-5 `}>
-                        <button onClick={handleSchedule} className="hover:cursor-pointer orange-bg px-4 py-2 w-[70%] mx-auto xl:py-3 xl:px-7 xl:w-fit text-sm xl:text-base rounded-3xl">Schedule A Call </button>
+                        <button onClick={handleSchedule} className="hover:cursor-pointer orange-bg py-2 w-[50%] md:w-[30%] lg:w-[35%] xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl">Schedule A Call </button>
                     </div>
                     <div>
-                        <h1 className='xl:text-2xl font-light'>New Business Enquiries:</h1>
-                        <p className='orange-text text-base xl:text-xl font-medium'>contact@thebrandandport.com</p>
+                        <h1 className='text-sm xl:text-base font-light'>New Business Enquiries:</h1>
+                        <p className='text-sm xl:text-base font-medium orange-text'>contact@thebrandandport.com</p>
                     </div>
                 </div>
                 <div className={`w-full xl:w-1/2 px-5 xl:px-0 body-text space-y-7 ${pathname !== "/contact-us" && "md:mt-12"}`}>
-                    {pathname !== "/contact-us" && <h1>Let us create an extraordinary brand that elevates your business. Please fill out the following form, and one of us will get back to you as soon as possible.</h1>}
+                    {pathname !== "/contact-us" && <h1 className='text-sm xl:text-base font-light'>Let us create an extraordinary brand that elevates your business. Please fill out the following form, and one of us will get back to you as soon as possible.</h1>}
                     <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-5'>
                         <div className='space-y-2'>
                             <input value={formData.name || ""} onChange={addDataInForm} type="text" name='name' placeholder='Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-base' />
@@ -139,9 +139,7 @@ const Footer = () => {
 
                                 {errors.helpWith && <p className='text-red-500 text-xs'>{errors.helpWith}</p>}
                             </div>
-
-
-                            <button disabled={loading} onClick={sendForm} className="orange-bg w-full xl:w-fit py-1 px-7 text-base rounded-3xl hover:cursor-pointer">{loading ? <div className='flex gap-2'><Loader2 className='animate-spin' /> Sending..</div> : "Send"}</button>
+                            <button disabled={loading} onClick={sendForm} className="hover:cursor-pointer orange-bg py-2 w-[30%] md:w-[30%] lg:w-[20%] xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl">{loading ? <div className='flex gap-2'><Loader2 className='animate-spin' /> Sending..</div> : "Send"}</button>
                         </div>
 
                     </div>

@@ -29,6 +29,7 @@ const Hero = () => {
                 controls
                 autoPlay
                 playsInline
+                muted
             ></video>
             <div className='text-center body-text mt-5 w-[80%]'>
                 <h1 className='text-sm md:text-xl xl:text-2xl secondary-text-color'>Powering the best products and services </h1>

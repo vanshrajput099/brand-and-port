@@ -17,12 +17,12 @@ const Header = () => {
             <Link href={"/"}>
                 <img src={logo.src} alt='brandLogo.png' className='w-[300px] h-[60px] hidden xl:block hover:cursor-pointer' />
             </Link>
-            <div className='flex justify-between items-center w-[90%] mx-auto xl:hidden'>
+            <div className='flex flex-row-reverse justify-between items-center w-full px-5 mx-auto xl:hidden'>
                 <NavSheet>
                     <Menu className='xl:hidden' />
                 </NavSheet>
                 <Link href={"/"}>
-                    <img src={logo.src} alt='brandLogo.png' height={200} width={300} className='h-auto hover:cursor-pointer' />
+                    <img src={logo.src} alt='brandLogo.png' className='w-[200px] h-[40px] hover:cursor-pointer' />
                 </Link>
             </div>
             <div className='gap-5 xl:w-[60%] hidden xl:flex xl:justify-between'>
