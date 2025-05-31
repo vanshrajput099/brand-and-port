@@ -5,8 +5,8 @@ import React from 'react'
 const OurWork = () => {
     return (
         <div className='w-full px-2 xl:px-0 xl:w-[65%] mx-auto py-10'>
-            <h1 className='text-3xl md:text-5xl xl:text-7xl heading-text'>Our Work</h1>
-            <div className="w-[90%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
+            <h1 className='text-3xl ml-10 md:text-5xl xl:text-7xl heading-text'>Our Work</h1>
+            <div className="w-[80%] mx-auto mt-10 columns-1 sm:columns-2 md:columns-3 gap-6">
                 {
                     OUR_WORKS_DATA2.map((ele, idx) => (
                         <div
@@ -32,7 +32,7 @@ const OurWork = () => {
             </div>
             <div className='flex justify-center'>
                 <Link href={"/our-work"}>
-                    <button className="hover:cursor-pointer orange-bg py-3 px-7 w-full xl:w-fit text-sm xl:text-base rounded-3xl body-text">Explore More</button>
+                    <button className="hover:cursor-pointer orange-bg py-2 px-4 w-full xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl">Explore More</button>
                 </Link>
             </div>
         </div>

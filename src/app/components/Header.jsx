@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import brandLogo from "@/assets/brandLogo.png"
 import logo from "@/assets/logo.png"
 import Link from 'next/link'
 import { HEADER_NAVS } from '@/data'
@@ -23,7 +22,7 @@ const Header = () => {
                     <Menu className='xl:hidden' />
                 </NavSheet>
                 <Link href={"/"}>
-                    <Image src={brandLogo.src} alt='brandLogo.png' height={200} width={300} className='w-[200px] h-[35px] hover:cursor-pointer' />
+                    <Image src={logo.src} alt='brandLogo.png' height={200} width={300} className='h-fit hover:cursor-pointer' />
                 </Link>
             </div>
             <div className='gap-7 hidden xl:flex'>
