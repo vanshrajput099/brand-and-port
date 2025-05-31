@@ -52,8 +52,8 @@ const page = () => {
                                     return (
                                         <Accordion key={idx} type="single" collapsible className={'bg-[#262120] rounded-4xl w-[90%] px-5 body-text'}>
                                             <AccordionItem value="item-1">
-                                                <AccordionTrigger className={'orange-text text-xs'}>{ele.question}</AccordionTrigger>
-                                                <AccordionContent className={'text-xs'}>
+                                                <AccordionTrigger className={'orange-text text-xs sm:text-base'}>{ele.question}</AccordionTrigger>
+                                                <AccordionContent className={'text-xs sm:text-base'}>
                                                     {ele.answer}
                                                 </AccordionContent>
                                             </AccordionItem>

@@ -75,7 +75,7 @@ const Footer = () => {
         <>
             <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto flex flex-col md:flex-row py-10 md:py-20 border-b-2 border-b-gray-800 gap-10'>
                 <div className='w-full xl:w-1/2 px-5 space-y-7 body-text'>
-                    {pathname !== "/contact-us" && <Image src={footerLogo.src} alt='brandLogo.png' height={200} width={300} className='h-[150px] w-[250px] mx-auto' />}
+                    {pathname !== "/contact-us" && <Image src={footerLogo.src} alt='brandLogo.png' height={200} width={300} className='h-[150px] w-[250px]' />}
                     <p className='text-sm xl:text-xl font-light'>Want to see if we’re the right fit to work together? Schedule a quick 15 min zoom chat with us to clear up any questions you may have.</p>
                     <div className={` pb-5 `}>
                         <button onClick={handleSchedule} className="hover:cursor-pointer orange-bg px-4 py-2 w-[70%] mx-auto xl:py-3 xl:px-7 xl:w-fit text-sm xl:text-base rounded-3xl">Schedule A Call </button>

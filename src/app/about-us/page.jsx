@@ -36,7 +36,7 @@ const page = () => {
                     <p className='body-text secondary-text-color text-sm md:text-xl lg:w-[60%] mx-auto'>From Asia to North America, our footprint is ever growing.
                         We connect people, products, and possibilities across the globe.
                     </p>
-                    <img src={world.src} className='w-[90%] md:w-[70%] lg:w-[50%] mx-auto mt-10' alt="" />
+                    <img src={world.src} className='w-[95%] md:w-[70%] lg:w-[70%] mx-auto mt-10' alt="" />
                 </div>
             </div>
             <div className='w-[80%] lg:w-[60%] mx-auto py-20 body-text space-y-6'>

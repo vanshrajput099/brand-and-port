@@ -21,7 +21,7 @@ const OurWork = () => {
                             <div className="px-4 py-4">
                                 <h1 className="px-3 py-1 text-xs rounded-md w-fit bg-white text-black mb-2">{ele.name}</h1>
                                 <h2 className="text-sm font-medium">{ele.title}</h2>
-                                <p className="text-xs text-gray-400">{ele.location}</p>
+                                <p className="text-xs orange-text">{ele.location}</p>
                                 <button className="mt-4 px-4 py-1 text-xs border border-gray-600 bg-[#2a2a2a] rounded-xl hover:bg-[#333] transition">
                                     Explore
                                 </button>
