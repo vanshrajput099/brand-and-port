@@ -61,6 +61,9 @@ const Footer = () => {
             toast("Mail has been sended successfully !!");
         } catch (error) {
             toast.error(error.message);
+        } finally {
+            setLoading(false);
+            setFormData({}); setSelectedOption(''); setOtherInput('');
         }
 
 
@@ -86,19 +89,19 @@ const Footer = () => {
                     {pathname !== "/contact-us" && <h1>Let us create an extraordinary brand that elevates your business. Please fill out the following form, and one of us will get back to you as soon as possible.</h1>}
                     <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-5'>
                         <div className='space-y-2'>
-                            <input onChange={addDataInForm} type="text" name='name' placeholder='Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.name || ""} onChange={addDataInForm} type="text" name='name' placeholder='Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
                             {errors.name && <p className='text-red-500 text-xs'>{errors.name}</p>}
                         </div>
                         <div className='space-y-2'>
-                            <input onChange={addDataInForm} type="email" name='email' placeholder='Email*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.email || ""} onChange={addDataInForm} type="email" name='email' placeholder='Email*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
                             {errors.email && <p className='text-red-500 text-xs'>{errors.email}</p>}
                         </div>
                         <div className='space-y-2'>
-                            <input onChange={addDataInForm} type="text" name='location' placeholder='Location*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.location || ""} onChange={addDataInForm} type="text" name='location' placeholder='Location*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
                             {errors.location && <p className='text-red-500 text-xs'>{errors.location}</p>}
                         </div>
                         <div className='space-y-2'>
-                            <input onChange={addDataInForm} type="text" name='companyName' placeholder='Company Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
+                            <input value={formData.companyName || ""} onChange={addDataInForm} type="text" name='companyName' placeholder='Company Name*' className='border-b-2 w-[80%] py-2 xl:placeholder:text-xl' />
                             {errors.companyName && <p className='text-red-500 text-xs'>{errors.companyName}</p>}
                         </div>
                     </div>

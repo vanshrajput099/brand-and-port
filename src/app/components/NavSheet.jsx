@@ -16,7 +16,6 @@ const NavSheet = ({ children }) => {
 
     const [open, setOpen] = useState(false);
     const pathname = usePathname();
-    console.log(pathname)
 
     const handleOpen = () => {
         setTimeout(() => {
