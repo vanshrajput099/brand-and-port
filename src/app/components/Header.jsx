@@ -13,9 +13,9 @@ const Header = () => {
     const pathname = usePathname();
 
     return (
-        <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[80%] mx-auto py-10 border-b-2 border-b-gray-700'>
+        <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[85%] mx-auto py-10 border-b-2 border-b-gray-700'>
             <Link href={"/"}>
-                <img src={logo.src} alt='brandLogo.png' className='h-auto w-[40%] hidden xl:block hover:cursor-pointer' />
+                <img src={logo.src} alt='brandLogo.png' className='w-[300px] h-[60px] hidden xl:block hover:cursor-pointer' />
             </Link>
             <div className='flex justify-between items-center w-[90%] mx-auto xl:hidden'>
                 <NavSheet>
@@ -25,7 +25,7 @@ const Header = () => {
                     <img src={logo.src} alt='brandLogo.png' height={200} width={300} className='h-auto hover:cursor-pointer' />
                 </Link>
             </div>
-            <div className='gap-7 xl:w-[60%] hidden xl:flex xl:justify-between'>
+            <div className='gap-5 xl:w-[60%] hidden xl:flex xl:justify-between'>
                 {
                     HEADER_NAVS.map((ele, idx) => {
                         return <Link key={idx} className={`body-text text-base hover:cursor-pointer ${pathname === ele.href && "orange-text"}`} href={ele.href}>
