@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
 import { FAQS, FAQs_2 } from '@/data';
