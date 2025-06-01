@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased text-white`}
+        className={`${inter.variable} ${outfit.variable} antialiased text-white overflow-x-hidden`}
       >
         <CustomCursor />
         <Header />

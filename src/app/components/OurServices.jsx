@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import mainFrame from "@/assets/mainFrame.png";
 import services1 from "@/assets/services1.png";
@@ -5,12 +6,39 @@ import services2 from "@/assets/services2.png";
 import services3 from "@/assets/services3.png";
 import services4 from "@/assets/services4.png";
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
 
 const OurServices = () => {
+
+    const { ref: titleRef, inView: titleInView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: leftDiv1, inView: leftDiv1InView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: leftDiv2, inView: leftDiv2InView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: rightDiv1, inView: rightDiv1InView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: rightDiv2, inView: rightDiv2InView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
     return (
         <div className='w-full min-h-screen mx-auto bg-black py-15 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
             <div className='w-[80%] xl:w-[60%] mx-auto'>
-                <div className='space-y-5'>
+                <div ref={titleRef} className={`space-y-5 transition-all duration-1000 delay-100 ease-out transform ${titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl font-medium heading-text bg-gradient-to-r from-white via-black via-80% xl:via-60% to-black bg-clip-text text-transparent'>Our Services</h1>
                     <p className='text-base md:text-xl xl:text-2xl body-text'>Our services cover every step of your brand’s journey.</p>
                 </div>
@@ -18,7 +46,7 @@ const OurServices = () => {
                 <div className='mt-10 xl:mt-20 space-y-5'>
 
                     <div className='flex flex-col sm:flex-row gap-5'>
-                        <div className='w-full xl:w-2/3 rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50'>
+                        <div ref={leftDiv1} className={`w-full xl:w-2/3 rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50 transition-all duration-1000 delay-100 ease-out transform ${leftDiv1InView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-100'}`}>
                             <img src={services1.src} className='mx-auto w-[90%] h-[120px] xl:h-[200px] object-cover' alt="" />
                             <div className='space-y-5 mt-5'>
                                 <h1 className='text-xl sm:text-2xl'>Global Sourcing</h1>
@@ -26,7 +54,7 @@ const OurServices = () => {
                             </div>
                         </div>
 
-                        <div className='w-full xl:w-1/3 rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50'>
+                        <div ref={rightDiv1} className={`w-full xl:w-1/3 rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50 transition-all duration-1000 delay-100 ease-out transform ${leftDiv1InView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-100'}`}>
                             <img src={services2.src} className='mx-auto w-[90%] h-[120px] xl:h-[200px] object-cover' alt="" />
                             <div className='space-y-5 mt-5'>
                                 <h1 className='text-xl sm:text-2xl'>Branding</h1>
@@ -37,7 +65,7 @@ const OurServices = () => {
 
                     <div className='flex flex-col sm:flex-row gap-5'>
 
-                        <div className='w-full xl:w-1/3 rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50'>
+                        <div ref={leftDiv2} className={`w-full xl:w-1/3 rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50 transition-all duration-1000 delay-100 ease-out transform ${rightDiv1InView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-100'}`}>
                             <img src={services3.src} className='mx-auto w-[90%] h-[120px] xl:h-[200px] object-cover' alt="" />
                             <div className='space-y-5 mt-5'>
                                 <h1 className='text-xl sm:text-2xl'>Website Development</h1>
@@ -45,7 +73,7 @@ const OurServices = () => {
                             </div>
                         </div>
 
-                        <div className='w-full xl:w-2/3 flex flex-col rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50'>
+                        <div ref={rightDiv2} className={`w-full xl:w-2/3 flex flex-col rounded-4xl p-5 xl:p-10 heading-text text-center bg-[#332b28]/50 transition-all duration-1000 delay-100 ease-out transform ${rightDiv2InView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-100'}`}>
                             <div className='space-y-5 mt-5 sm:mt-0'>
                                 <h1 className='text-xl sm:text-2xl'>Social Media Management</h1>
                                 <p className='w-[90%] mx-auto text-sm md:text-base'>We don’t chase trends. We build steady, thoughtful presence that speaks to your audience and aligns with your brand.</p>

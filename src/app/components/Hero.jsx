@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import mainFrame from "@/assets/mainFrame.png"
+import { useInView } from 'react-intersection-observer'
 
 const Hero = () => {
 
@@ -8,12 +9,32 @@ const Hero = () => {
         window.open("https://calendly.com/salonitcn/30min?month=2025-05", "_blank")
     }
 
+    const { ref: introRef, inView: introRefInView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: titleRef, inView: titleInView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: videoRef, inView: videoInView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
+    const { ref: descRef, inView: descInView } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    })
+
     return (
         <div className='px-2 xl:px-0 w-full mx-auto bg-black flex flex-col items-center pt-45 pb-10 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
-            <div className='bg-[#272423] px-3 py-1 body-text text-sm rounded-xl w-fit'>
+            <div ref={introRef} className={`bg-[#272423] px-3 py-1 body-text text-sm rounded-xl w-fit transition-all duration-1000 ease-out transform ${introRefInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <h1>Introducing Brand & Port</h1>
             </div>
-            <div className='text-center space-y-5 w-[80%] mx-auto'>
+            <div ref={titleRef} className={`text-center space-y-5 w-[80%] mx-auto transition-all duration-1000 delay-500 ease-out transform ${titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} `}>
                 <div className='heading-text text-2xl md:text-5xl xl:text-7xl text-center font-medium'>
                     <h1>Your Brand, Our Port</h1>
                     <h1 className='bg-gradient-to-b from-white via-black via-380% to-black bg-clip-text text-transparent'>Lets Navigate Success Together</h1>
@@ -24,14 +45,15 @@ const Hero = () => {
                 </div>
             </div>
             <video
+                ref={videoRef}
                 src="/assets/mainVideo.mp4"
-                className="w-[80%] sm:w-[80%] xl:w-[55%] mt-5"
+                className={`w-[80%] sm:w-[80%] xl:w-[55%] mt-5 transition-all duration-1000 delay-800 ease-out transform ${videoInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 controls
                 autoPlay
                 playsInline
                 muted
             ></video>
-            <div className='text-center body-text mt-5 w-[80%]'>
+            <div className={`text-center body-text mt-5 w-[80%] transition-all duration-1000 delay-200 ease-out transform ${descInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-100'}`} ref={descRef}>
                 <h1 className='text-sm md:text-xl xl:text-2xl secondary-text-color'>Powering the best products and services </h1>
                 <h1 className='text-sm md:text-xl xl:text-2xl'>From next-gen startups to established enterprises.</h1>
             </div>
