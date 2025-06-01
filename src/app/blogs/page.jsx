@@ -31,7 +31,7 @@ const page = () => {
       <div className='w-[80%] xl:w-[65%] mx-auto py-10 md:py-10 md:mt-30 xl:mt-40'>
         <div className='flex justify-center gap-5 md:flex-row body-text relative'>
 
-          <div ref={leftRef} className={`w-full md:w-[65%] lg:w-[50%] rounded-2xl space-y-5 bg-[#171717]/90 p-3 md:px-10 md:pr-20 xl:pr-40 md:py-5 relative overflow-visible transtion-all duration-1000 delay-100 ease-out transform ${leftRefInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+          <div ref={leftRef} className={`w-full md:w-[65%] lg:w-[50%] rounded-2xl space-y-5 bg-[#171717]/90 p-3 md:px-10 md:pr-20 xl:pr-40 md:py-5 relative overflow-visible transtion-all duration-1000 delay-100 ease-out transform ${leftRefInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-5'}`}>
             <div className={`w-[90%] xl:w-full space-y-5`}>
               <h1 className='text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium heading-text'>
                 The Benefits and Challenges of Sourcing from India
