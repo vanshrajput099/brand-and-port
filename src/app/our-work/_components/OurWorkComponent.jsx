@@ -11,7 +11,7 @@ const OurWorkComponent = ({ data }) => {
 
     return (
         <div ref={ref}
-            className="mb-16 break-inside-avoid overflow-hidden rounded-xl bg-[#121212] shadow-md hover:shadow-lg transition-all duration-300"
+            className="mb-16 break-inside-avoid overflow-hidden rounded-xl bg-[#121212] shadow-md hover:shadow-lg transition duration-300"
         >
             <img
                 className="w-full max-sm:max-h-[150px] object-cover rounded-t-xl"

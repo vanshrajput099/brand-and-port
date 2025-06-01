@@ -61,11 +61,11 @@ const page = () => {
             </div>
             <div className='py-5 w-[80%] mx-auto flex flex-col sm:flex-row justify-between items-center body-text'>
                 <img ref={imageRef}
-                    className={`w-[400px] h-[450px] mx-auto sm:w-1/2 sm:h-1/2 object-cover aspect-[4/5] block transtion-all duration-1000 delay-100 ease-out transform ${imageInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-100'}`}
+                    className={`w-[400px] h-[450px] mx-auto sm:w-1/2 sm:h-1/2 object-cover aspect-[4/5] block transtion-all duration-1000 delay-100 ease-out transform ${imageInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                     src={about1.src}
                     alt=""
                 />
-                <div ref={rightDiv} className={`space-y-5 px-2 w-[90%] mx-auto lg:mx-0 lg:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${rightDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-100'}`}>
+                <div ref={rightDiv} className={`space-y-5 px-2 w-[90%] mx-auto lg:mx-0 lg:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${rightDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
                     <h1 className='font-medium text-xl md:text-3xl xl:text-5xl'>From factory floors to global shelves</h1>
                     <h1 className='orange-text font-medium text-xs sm:text-sm md:text-base xl:text-xl'>We don’t just build brands, we take them places.</h1>
                     <p className='text-xs sm:text-sm md:text-base xl:text-xl'>With an extensive experience in logistics, great minds thought of some potential endless ways of living a life with sustainable products. Born in Canada, where creativity collided with commerce, The Brand & Port was founded on a bold idea: that branding and global sourcing could become the ultimate partnership of vision and execution.
