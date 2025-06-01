@@ -43,10 +43,10 @@ const page = () => {
                 </div>
             </div>
             <ServicePageData />
-            <div className='w-full px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-10 xl:py-20 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+            <div className='overflow-x-hidden w-full px-2 xl:px-0 xl:w-[75%] mx-auto bg-black flex flex-col items-center py-10 xl:py-20 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
                 <h1 className='heading-text text-3xl md:text-5xl xl:text-7xl'>FAQs</h1>
                 <div className='w-full mx-auto flex flex-col md:flex-row gap-10 mt-10'>
-                    <div ref={leftDiv} className={`w-full xl:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${leftDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-50'} `}>
+                    <div ref={leftDiv} className={`w-full xl:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${leftDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-15 lg:-translate-x-50'} `}>
                         <h1 className='text-center text-xl md:text-2xl lg:text-3xl'>Global Sourcing</h1>
                         <div className='w-full flex flex-col items-center gap-5 mt-10'>
                             {
@@ -65,7 +65,7 @@ const page = () => {
                             }
                         </div>
                     </div>
-                    <div ref={rightDiv} className={`w-full xl:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${rightDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-50'}`}>
+                    <div ref={rightDiv} className={`w-full xl:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${rightDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-15 lg:translate-x-50'}`}>
                         <h1 className='text-center text-xl md:text-2xl lg:text-3xl'>Branding</h1>
                         <div className='w-full flex flex-col items-center gap-5 mt-10'>
                             {

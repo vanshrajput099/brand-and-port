@@ -8,6 +8,7 @@ const ServiceBox = ({ data, idx }) => {
 
     const { ref, inView } = useInView({
         threshold: 0.2,
+        rootMargin: '0px 0px 15% 0px',
         triggerOnce: true,
     })
 
@@ -16,7 +17,7 @@ const ServiceBox = ({ data, idx }) => {
     }
 
     return (
-        <div ref={ref} key={idx} className={`w-full sm:w-[45%] rounded-4xl p-5 space-y-4 transtion-all duration-1000 delay-200 ease-out transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} `} style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
+        <div ref={ref} key={idx} className={`w-full sm:w-[45%] rounded-4xl p-5 space-y-4 transtion-all duration-1000 delay-300 ease-out transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} `} style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
             <img className='w-full h-[150px] lg:h-[250px] mx-auto object-cover' src={data.image.src} alt="" />
             <h1 className='text-xl lg:text-3xl font-medium'>{data.title}</h1>
             <p className='text-sm lg:text-base'>{data.description}</p>

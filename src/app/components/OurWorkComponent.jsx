@@ -5,7 +5,8 @@ import { useInView } from 'react-intersection-observer'
 const OurWorkComponent = ({ data }) => {
 
     const { ref, inView } = useInView({
-        threshold: 0.1,
+        threshold: 0,
+        rootMargin: '0px 0px 35% 0px',
         triggerOnce: true,
     })
 

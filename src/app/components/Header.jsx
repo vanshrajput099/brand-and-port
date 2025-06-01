@@ -1,6 +1,5 @@
 "use client";
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import logo from "@/assets/logo.png"
 import Link from 'next/link'
 import { HEADER_NAVS } from '@/data'

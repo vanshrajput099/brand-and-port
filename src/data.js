@@ -45,12 +45,12 @@ import how3 from "@/assets/how3.png";
 
 export const HEADER_NAVS = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about-us" },
-    { name: "Services", href: "/services" },
-    { name: "Our Work", href: "/our-work" },
-    { name: "Private Label", href: "/private-label" },
-    { name: "Blogs", href: "/blogs" },
-    { name: "Contact Us", href: "/contact-us" },
+    { name: "About Us", href: "/about-us/" },
+    { name: "Services", href: "/services/" },
+    { name: "Our Work", href: "/our-work/" },
+    { name: "Private Label", href: "/private-label/" },
+    { name: "Blogs", href: "/blogs/" },
+    { name: "Contact Us", href: "/contact-us/" },
 ]
 
 export const OUR_WORKS_DATA2 = [

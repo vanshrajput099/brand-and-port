@@ -16,7 +16,8 @@ export default function CustomCursor() {
         <div
             className="hidden lg:block pointer-events-none fixed top-0 left-0 z-[9999] mix-blend-difference"
             style={{
-                transform: `translate(${position.x}px, ${position.y}px)`,
+                transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
+                willChange: 'transform',
             }}
         >
             <div
