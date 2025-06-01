@@ -18,11 +18,6 @@ const page = () => {
     triggerOnce: true,
   })
 
-  const { ref: rightRef, inView: rightRefInView } = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  })
-
   return (
     <>
       <div className='w-full px-2 xl:px-0 mx-auto bg-black flex flex-col items-center py-30 pb-20 xl:pb-15 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
