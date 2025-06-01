@@ -45,12 +45,16 @@
   font-family: var(--font-outfit);
 }
 
-.secondary-text-color {
-  color: #B4BCD0;
-}
-
 .body-text {
   font-family: var(--font-inter);
+}
+
+body {
+  font-family: var(--font-outfit), var(--font-inter), sans-serif;
+}
+
+.secondary-text-color {
+  color: #B4BCD0;
 }
 
 .orange-bg {
