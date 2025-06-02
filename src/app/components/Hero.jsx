@@ -24,10 +24,7 @@ const Hero = () => {
         triggerOnce: true,
     })
 
-    const { ref: descRef, inView: descInView } = useInView({
-        threshold: 0.2,
-        triggerOnce: true,
-    })
+  
 
     return (
         <div className='overflow-x-hidden px-2 xl:px-0 w-full mx-auto bg-black flex flex-col items-center pt-45 pb-10 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
@@ -53,10 +50,7 @@ const Hero = () => {
                 playsInline
                 muted
             ></video>
-            <div className={`text-center body-text mt-5 w-[80%] transition duration-1000 delay-200 ease-out transform ${descInView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-40'}`} ref={descRef}>
-                <h1 className='text-sm md:text-xl xl:text-2xl secondary-text-color'>Powering the best products and services </h1>
-                <h1 className='text-sm md:text-xl xl:text-2xl'>From next-gen startups to established enterprises.</h1>
-            </div>
+            
         </div>
     )
 }
