@@ -57,7 +57,7 @@ const Footer = () => {
         }
 
         try {
-            await axios.post("/api/contact", { ...formData, helpWith: selectedOption === "Other" ? otherInput : selectedOption });
+            await axios.post(process.env.NEXT_PUBLIC_BACKEND_MAIL_URL, { ...formData, helpWith: selectedOption === "Other" ? otherInput : selectedOption });
             toast("Mail has been sended successfully !!");
         } catch (error) {
             toast.error(error.message);
