@@ -16,7 +16,7 @@ const OurWorkComponent = ({ data }) => {
             className={`mb-16 break-inside-avoid overflow-hidden rounded-xl bg-[#121212] shadow-md hover:shadow-lg transition duration-500 ease-out transform ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-100'}`}
         >
             <img
-                className="w-full max-sm:max-h-[150px] object-cover object-center rounded-t-xl"
+                className="w-full max-sm:max-h-[150px] object-cover object-center rounded-t-xl bg-white"
                 src={data.img.src}
                 alt={data.name}
             />

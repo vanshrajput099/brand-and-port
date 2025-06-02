@@ -35,7 +35,7 @@ const Hero = () => {
                 <h1>Introducing Brand & Port</h1>
             </div>
             <div ref={titleRef} className={`text-center space-y-5 w-[80%] mx-auto transition duration-1000 delay-500 ease-out transform ${titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} `}>
-                <div className='heading-text text-2xl md:text-5xl xl:text-7xl text-center font-medium'>
+                <div className='heading-text text-2xl md:text-5xl xl:text-7xl text-center font-medium leading-[5.5rem]'>
                     <h1>Your Brand, Our Port</h1>
                     <h1 className='bg-gradient-to-b from-white via-black via-380% to-black bg-clip-text text-transparent'>Lets Navigate Success Together</h1>
                 </div>

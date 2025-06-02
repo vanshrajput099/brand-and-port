@@ -257,7 +257,6 @@ export const FAQs_2 = [
     },
 ];
 
-
 export const FEATURES_DATA = [
     {
         title: "Sustainable & Scalable Solutions",
@@ -280,7 +279,7 @@ export const FEATURES_DATA = [
         icon: choose4,
     },
     {
-        title: "Creative Meets Strategic",
+        title: "Creative Meets Strategy",
         description: "Design excellence backed by strategic execution.",
         icon: choose5,
     },

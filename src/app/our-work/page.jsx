@@ -25,9 +25,9 @@ const page = () => {
     return (
         <>
             <div className='w-full px-2 mx-auto bg-black flex flex-col items-center py-30 pb-20 space-y-5' style={{ background: `url(${mainFrame.src})`, backgroundPosition: "center", backgroundSize: 'cover' }}>
-                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[65%] mx-auto mt-20'>
-                    <h1 ref={titleRef} className={`heading-text text-3xl md:text-5xl xl:text-7xl transtion-all duration-1000 delay-100 ease-out transform ${titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Our Work</h1>
-                    <p ref={descRef} className={`body-text lg:text-left secondary-text-color text-base md:text-xl lg:w-[60%] xl:w-[50%] transtion-all duration-1000 delay-100 ease-out transform ${descInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Showcasing the brands we’ve helped shape from concept to global shelf.
+                <div className='flex flex-col space-y-3 lg:space-y-0 text-center lg:flex-row lg:justify-between w-[80%] xl:w-[70%] mx-auto mt-20'>
+                    <h1 ref={titleRef} className={`heading-text text-3xl md:text-5xl xl:text-6xl transtion-all duration-1000 delay-100 ease-out transform ${titleInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Our Work</h1>
+                    <p ref={descRef} className={`body-text lg:text-left secondary-text-color text-base md:text-xl lg:w-[50%] transtion-all duration-1000 delay-100 ease-out transform ${descInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Showcasing the brands we’ve helped shape from concept to global shelf.
                     </p>
                 </div>
                 {/* <img className='absolute top-[20%] md:w-[60%] xl:w-[40%] -z-10' src={stats.src} alt="" /> */}
@@ -39,16 +39,28 @@ const page = () => {
                     })
                 }
             </div>
-            <div className="relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-20">
-                <h1 ref={highlightRef} className={`px-5 text-center heading-text text-3xl sm:text-5xl xl:text-7xl transtion-all duration-1000 delay-100 ease-out transform ${highlightInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-20 overflow-hidden">
+                <h1
+                    ref={highlightRef}
+                    className={`px-5 text-center heading-text text-3xl sm:text-5xl xl:text-7xl transition-all duration-1000 delay-100 ease-out transform 
+      ${highlightInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                >
                     Let’s Make You the <br /> Next Highlight.
                 </h1>
+
                 <img
-                    className={`absolute w-full top-[-40px] right-0 sm:top-[-150px] md:right-0 md:w-[70%] xl:top-[-60px] xl:right-[-10%] xl:w-[70%] z-0 will-change-transform backface-visibility-hidden transform`}
+                    className={`absolute w-full top-[-40px] right-0 sm:top-[-150px] md:right-0 md:w-[70%] xl:top-[-60px] xl:right-[-10%] xl:w-[70%] z-[-1] 
+      transform`}
                     src={stats.src}
                     alt=""
+                    style={{
+                        WebkitBackfaceVisibility: 'hidden',
+                        backfaceVisibility: 'hidden',
+                        WebkitTransformStyle: 'preserve-3d',
+                    }}
                 />
             </div>
+
         </>
     )
 }

@@ -38,14 +38,14 @@ export default function TestimonialCarousel() {
                                     <div
                                         key={index}
                                         ref={index === 0 ? cardRef : null}
-                                        className={`w-[300px] md:w-[400px] xl:w-[550px] transition duration-500 ease-in-out ${isActive ? "scale-100" : "scale-90"} px-6 py-10 bg-[#1a1a1a]/40 border border-white/10 text-white rounded-3xl space-y-6 flex-shrink-0`}
+                                        className={`w-[300px] md:w-[400px] xl:w-[500px] transition duration-500 ease-in-out ${isActive ? "scale-100" : "scale-90"} px-6 py-10 bg-[#1a1a1a]/40 border border-white/10 text-white rounded-3xl space-y-6 flex-shrink-0`}
                                     >
                                         <img
                                             className="h-[20px] w-[30px] xl:h-[60px] xl:w-[80px]"
                                             src={quote.src}
                                             alt=""
                                         />
-                                        <p className="xl:text-xl body-text">{testimonial.quote}</p>
+                                        <p className="xl:text-xl body-text line-clamp-5">{testimonial.quote}</p>
                                         <div className="body-text">
                                             <h1 className="xl:text-xl orange-text font-bold">{testimonial.author}</h1>
                                             <h1 className="text-xs xl:text-sm">{testimonial.location}</h1>

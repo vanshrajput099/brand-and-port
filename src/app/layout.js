@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Inter, Outfit } from "next/font/google";
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
 import CustomCursor from "@/components/CustomCursor";
 import Logo from "./components/Logo";
 
@@ -27,9 +27,25 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                try {
+                  const theme = localStorage.getItem('theme');
+                  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
-        className={`${inter.variable} ${outfit.variable} antialiased text-white overflow-x-hidden`}
+        className={`${inter.variable} ${outfit.variable} font-outfit antialiased text-white overflow-x-hidden`}
       >
         <CustomCursor />
         <Header />

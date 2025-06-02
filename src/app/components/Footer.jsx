@@ -71,6 +71,10 @@ const Footer = () => {
         window.open("https://calendly.com/salonitcn/30min?month=2025-05", "_blank")
     }
 
+    const sendEmail = () => {
+        window.location.href = "mailto:contact@thebrandandport.com?subject=Work%20Inquiry&body=Hi%20Team%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.";
+    };
+
     return (
         <>
             <div className='w-full px-2 xl:px-0 xl:w-[70%] mx-auto flex flex-col md:flex-row py-10 md:py-20 border-b-2 border-b-gray-800 gap-10'>
@@ -82,7 +86,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <h1 className='text-sm xl:text-base font-light'>New Business Enquiries:</h1>
-                        <p className='text-sm xl:text-base font-medium orange-text'>contact@thebrandandport.com</p>
+                        <p onClick={sendEmail} className='hover:cursor-pointer text-sm xl:text-base font-medium orange-text'>contact@thebrandandport.com</p>
                     </div>
                 </div>
                 <div className={`w-full xl:w-1/2 px-5 xl:px-0 body-text space-y-7 ${pathname !== "/contact-us" && "md:mt-12"}`}>
