@@ -19,7 +19,7 @@ const Footer = () => {
     const [formData, setFormData] = useState({});
 
     const addDataInForm = (e) => {
-        setErros({});
+        setErrors({});
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
     }
 
@@ -52,7 +52,7 @@ const Footer = () => {
         }
 
         if (Object.keys(errors).length > 0) {
-            setErros(errors);
+            setErrors(errors);
             return;
         }
 
