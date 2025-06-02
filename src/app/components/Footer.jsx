@@ -56,6 +56,8 @@ const Footer = () => {
             return;
         }
 
+        setLoading(true);
+
         try {
             await axios.post(process.env.NEXT_PUBLIC_BACKEND_MAIL_URL, { ...formData, helpWith: selectedOption === "Other" ? otherInput : selectedOption });
             toast("Mail has been sended successfully !!");
