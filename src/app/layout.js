@@ -23,6 +23,9 @@ const outfit = Outfit({
 export const metadata = {
   title: "Brand And Port",
   description: "A Canada-based agency helping brands source globally, build strong identities, and go to market with impact.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -31,6 +34,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="apple-mobile-web-app-title" content="Brand And Port" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${inter.variable} ${outfit.variable} font-outfit antialiased text-white overflow-x-hidden`}
