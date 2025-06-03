@@ -112,7 +112,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <h1 className='text-xl'>What do you want our help with? *</h1>
+                        <h1 className='text-base'>What do you want our help with? *</h1>
                         <div className='flex flex-col space-y-5 mt-5'>
                             {FOOTER_OPTIONS.map((ele, idx) => {
                                 return (
@@ -145,7 +145,9 @@ const Footer = () => {
 
                                 {errors.helpWith && <p className='text-red-500 text-xs'>{errors.helpWith}</p>}
                             </div>
-                            <button disabled={loading} onClick={sendForm} className="hover:cursor-pointer orange-bg py-2 w-[30%] md:w-[30%] lg:w-[20%] xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl">{loading ? <div className='flex gap-2'><Loader2 className='animate-spin' /> Sending..</div> : "Send"}</button>
+                            <button disabled={loading} onClick={sendForm} className={`flex justify-center hover:cursor-pointer orange-bg py-2 w-[30%] md:w-[30%] lg:w-[30%] xl:py-3 xl:px-7 xl:w-fit text-xs xl:text-base rounded-3xl`}>
+                                {loading ? <div className='flex gap-1 items-center justify-center text-xs xl:text-base'><Loader2 className='animate-spin h-4 w-4' /> Sending</div> : "Send"}
+                            </button>
                         </div>
 
                     </div>

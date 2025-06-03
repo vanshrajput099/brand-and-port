@@ -39,18 +39,17 @@ const page = () => {
                     })
                 }
             </div>
-            <div className="relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-20 overflow-hidden">
+            <div className="relative w-full md:w-[90%] xl:w-[65%] mx-auto xl:mt-10 py-10 xl:py-[72px] overflow-hidden">
                 <h1
                     ref={highlightRef}
-                    className={`px-5 text-center heading-text text-3xl sm:text-5xl xl:text-7xl transition-all duration-1000 delay-100 ease-out transform 
-      ${highlightInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                    className={`px-5 text-center leading-tight heading-text text-3xl sm:text-5xl xl:text-7xl transition-all duration-1000 delay-100 ease-out transform 
+    ${highlightInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 >
                     Let’s Make You the <br /> Next Highlight.
                 </h1>
 
                 <img
-                    className={`absolute w-full top-[-40px] right-0 sm:top-[-150px] md:right-0 md:w-[70%] xl:top-[-60px] xl:right-[-10%] xl:w-[70%] z-[-1] 
-      transform`}
+                    className="absolute w-full top-[-40px] right-0 sm:top-[-120px] md:right-0 md:w-[70%] xl:top-[-60px] xl:right-[-10%] xl:w-[70%] z-[-1] transform"
                     src={stats.src}
                     alt=""
                     style={{
@@ -60,6 +59,7 @@ const page = () => {
                     }}
                 />
             </div>
+
 
         </>
     )

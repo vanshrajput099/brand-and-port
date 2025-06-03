@@ -23,7 +23,9 @@ const ServiceBox = ({ data, idx }) => {
             <p className='text-sm lg:text-base'>{data.description}</p>
             {
                 data.price === "Schedule A Call" ?
-                    <h1 onClick={handleSchedule} className='hover:cursor-pointer hover:text-[#C95D39] text-xl lg:text-xl font-medium text-gray-400'>{data.price}</h1>
+                    <button onClick={handleSchedule} className='orange-bg px-2 py-1 xl:px-4 xl:py-2 rounded'>
+                        <h1 className='hover:cursor-pointer text-sm lg:text-base font-medium'>{data.price}</h1>
+                    </button>
                     : <h1 className='text-xl lg:text-xl font-medium text-gray-400'>{data.price}</h1>
             }
             <hr className='w-full lg:w-[70%]' />
