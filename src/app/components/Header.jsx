@@ -12,7 +12,7 @@ const Header = () => {
     const pathname = usePathname();
 
     return (
-        <div className='flex absolute xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[85%] mx-auto py-10 border-b-2 border-b-gray-700'>
+        <div className='fixed top-0 left-0 z-50 flex xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[85%] mx-auto py-10 backdrop-blur-md border-b border-white/20 shadow-md'>
             <Link href={"/"}>
                 <img src={logo.src} alt='brandLogo.png' className='w-[300px] h-[60px] hidden xl:block hover:cursor-pointer' />
             </Link>

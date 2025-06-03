@@ -34,7 +34,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="apple-mobile-web-app-title" content="Brand And Port" />
+        <link rel="icon" type="image/png" href="/icon1.png" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icon1.png" />
       </head>
       <body
         className={`${inter.variable} ${outfit.variable} font-outfit antialiased text-white overflow-x-hidden`}
