@@ -21,13 +21,13 @@ const ServiceBox = ({ data, idx }) => {
             <img className='w-full h-[150px] lg:h-[250px] mx-auto object-cover' src={data.image.src} alt="" />
             <h1 className='text-xl lg:text-3xl font-medium'>{data.title}</h1>
             <p className='text-sm lg:text-base'>{data.description}</p>
-            {
+            {/* {
                 data.price === "Schedule A Call" ?
                     <button onClick={handleSchedule} className='orange-bg px-2 py-1 xl:px-4 xl:py-2 rounded'>
                         <h1 className='hover:cursor-pointer text-sm lg:text-base font-medium'>{data.price}</h1>
                     </button>
                     : <h1 className='text-xl lg:text-xl font-medium text-gray-400'>{data.price}</h1>
-            }
+            } */}
             <hr className='w-full lg:w-[70%]' />
             <p className='text-sm lg:text-base'>Key Features</p>
             <div>
