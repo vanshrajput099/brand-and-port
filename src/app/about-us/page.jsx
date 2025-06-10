@@ -68,7 +68,7 @@ const page = () => {
                 <div ref={rightDiv} className={`space-y-5 px-2 w-[90%] mx-auto lg:mx-0 lg:w-1/2 transtion-all duration-1000 delay-100 ease-out transform ${rightDivInView ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
                     <h1 className='font-medium text-xl md:text-3xl xl:text-5xl'>From factory floors to global shelves</h1>
                     <h1 className='orange-text font-medium text-xs sm:text-sm md:text-base xl:text-xl'>We don’t just build brands, we take them places.</h1>
-                    <p className='text-xs sm:text-sm md:text-base xl:text-xl'>With an extensive experience in logistics, great minds thought of some potential endless ways of living a life with sustainable products. Born in Canada, where creativity collided with commerce, The Brand & Port was founded on a bold idea: that branding and global sourcing could become the ultimate partnership of vision and execution.
+                    <p className='text-xs sm:text-sm md:text-base xl:text-xl'>With an extensive experience in logistics, thought of some potential endless ways of living a life with sustainable products. Born in Canada, where creativity collided with commerce, The Brand & Port was founded on a bold idea: that branding and global sourcing could become the ultimate partnership of vision and execution.
                         At The Brand & Port, we navigate the intricate worlds of branding and international business with precision. </p>
                     <p className='text-xs sm:text-sm md:text-base xl:text-xl'><span className='orange-text'>Our purpose?</span> To empower brands not just to look exceptional  but to perform powerfully across markets. We believe a great brand is like a masterfully built ship: enduring, elegant, and ready to chart new horizons.
                         Our roots are here, our ambition is worldwide. We guide brands across borders, steering them toward opportunity and impact. Because for us, success isn’t just about reaching the destination it’s about creating an unforgettable journey.</p>
@@ -88,7 +88,7 @@ const page = () => {
             <div className='w-[80%] lg:w-[60%] mx-auto py-20 body-text space-y-6'>
                 <div ref={targetAudience} className={`space-y-5 transtion-all duration-1000 delay-100 ease-out transform ${targetAudienceInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                     <h1 className='heading-text text-2xl md:text-5xl xl:text-7xl'>Target Audience</h1>
-                    <p className='body-text secondary-text-color text-sm md:text-xl'>Canadian businesses across industries looking to strengthen their brand, expand their market reach, and source quality products globally.</p>
+                    <p className='body-text secondary-text-color text-sm md:text-xl'>Businesses across industries looking to strengthen their brand, expand their market reach, and source quality products globally.</p>
                 </div>
                 <div>
                     <h1 ref={idealFor} className={`body-text text-base md:text-xl transtion-all duration-1000 delay-200 ease-out transform ${idealForInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Ideal For:</h1>
