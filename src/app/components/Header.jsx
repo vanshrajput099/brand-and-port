@@ -14,14 +14,14 @@ const Header = () => {
     return (
         <div className='fixed top-0 left-0 z-50 flex xl:-translate-x-1/2 xl:left-1/2 w-full xl:justify-between items-center xl:w-[85%] mx-auto py-10 backdrop-blur-md border-b border-white/20 shadow-md'>
             <Link href={"/"}>
-                <img src={logo.src} alt='brandLogo.png' className='w-[300px] h-[60px] hidden xl:block hover:cursor-pointer' />
+                <img src={logo.src} alt='brandLogo.png' className='w-[300px] h-[60px] hidden xl:block hover:cursor-pointer cursor-hover-target cursor-hover-text transition-colors duration-300' />
             </Link>
             <div className='flex flex-row-reverse justify-between items-center w-full px-5 mx-auto xl:hidden'>
                 <NavSheet>
                     <Menu className='xl:hidden' />
                 </NavSheet>
                 <Link href={"/"}>
-                    <img src={logo.src} alt='brandLogo.png' className='w-[200px] h-[40px] hover:cursor-pointer' />
+                    <img src={logo.src} alt='brandLogo.png' className='w-[200px] h-[40px] hover:cursor-pointer cursor-hover-target cursor-hover-text transition-colors duration-300' />
                 </Link>
             </div>
             <div className='gap-5 xl:w-[60%] hidden xl:flex xl:justify-between'>
