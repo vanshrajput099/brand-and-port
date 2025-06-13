@@ -46,8 +46,8 @@ export default function CustomCursor() {
                     ${hoveringText ? 'border-white bg-white' : hovering ? 'border-orange-500 bg-orange-500' : 'border-orange-500'}
                 `}
                 style={{
-                    width: hovering ? 55 : 24,
-                    height: hovering ? 55 : 24,
+                    width: hovering ? 65 : 24,
+                    height: hovering ? 65 : 24,
                     transform: 'translate(-50%, -50%)',
                 }}
             >
