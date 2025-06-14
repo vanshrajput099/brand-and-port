@@ -5,6 +5,8 @@ import { Inter, Outfit } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import CustomCursor from "@/components/CustomCursor";
 import Logo from "./components/Logo";
+import Script from "next/script";
+import Analytics from "./components/Analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +35,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-T1P1MVB8H9"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-T1P1MVB8H9');
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${outfit.variable} font-outfit antialiased text-white overflow-x-hidden`}
       >
@@ -40,6 +60,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Toaster />
         <Logo />
+        <Analytics />
         {children}
         <Footer />
       </body>
